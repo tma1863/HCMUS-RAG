@@ -47,6 +47,7 @@ class HippoRAG:
                  azure_endpoint=None,
                  azure_embedding_endpoint=None,
                  dataset=None,
+                 embedding_batch_size=None,
         ):
         """
         Initializes an instance of the class and its related components.
@@ -113,6 +114,9 @@ class HippoRAG:
 
         if dataset is not None:
             self.global_config.dataset = dataset
+        
+        if embedding_batch_size is not None:
+            self.global_config.embedding_batch_size = embedding_batch_size
 
         _print_config = ",\n  ".join([f"{k} = {v}" for k, v in asdict(self.global_config).items()])
         logger.debug(f"HippoRAG init with config:\n  {_print_config}\n")
@@ -442,7 +446,8 @@ class HippoRAG:
 
         # Evaluate retrieval
         if gold_docs is not None:
-            k_list = [1, 2, 5, 10, 20, 30, 50, 100, 150, 200]
+            # k_list = [1, 2, 5, 10, 20, 30, 50, 100, 150, 200]
+            k_list = [1, 2, 5]
             overall_retrieval_result, example_retrieval_results = retrieval_recall_evaluator.calculate_metric_scores(gold_docs=gold_docs, retrieved_docs=[retrieval_result.docs for retrieval_result in retrieval_results], k_list=k_list)
             logger.info(f"Evaluation results for retrieval: {overall_retrieval_result}")
 
