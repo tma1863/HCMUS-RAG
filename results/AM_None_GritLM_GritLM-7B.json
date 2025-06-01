@@ -1,0 +1,22 @@
+{
+    "major": "AM",
+    "dataset_style": null,
+    "embedding_model_name": "GritLM/GritLM-7B",
+    "graph_info": {
+        "num_phrase_nodes": 1479,
+        "num_passage_nodes": 94,
+        "num_total_nodes": 1573,
+        "num_extracted_triples": 1842,
+        "num_triples_with_passage_node": 1980,
+        "num_synonymy_triples": 14546,
+        "num_total_triples": 18368
+    },
+    "retrieval_results": {
+        "Recall@1": 0.6923,
+        "Recall@2": 0.6923,
+        "Recall@5": 0.6923
+    },
+    "bleu": "24.71",
+    "meteor": "41.60",
+    "rougeL": "47.51"
+}

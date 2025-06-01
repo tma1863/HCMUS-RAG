@@ -1,0 +1,22 @@
+{
+    "major": "DS",
+    "dataset_style": null,
+    "embedding_model_name": "nvidia/NV-Embed-v2",
+    "graph_info": {
+        "num_phrase_nodes": 1307,
+        "num_passage_nodes": 75,
+        "num_total_nodes": 1382,
+        "num_extracted_triples": 1599,
+        "num_triples_with_passage_node": 1743,
+        "num_synonymy_triples": 7099,
+        "num_total_triples": 10441
+    },
+    "retrieval_results": {
+        "Recall@1": 0.6,
+        "Recall@2": 0.675,
+        "Recall@5": 0.675
+    },
+    "bleu": "13.85",
+    "meteor": "28.59",
+    "rougeL": "33.16"
+}

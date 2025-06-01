@@ -1,0 +1,22 @@
+{
+    "major": "DS",
+    "dataset_style": "hcmus",
+    "embedding_model_name": "GritLM/GritLM-7B",
+    "graph_info": {
+        "num_phrase_nodes": 1332,
+        "num_passage_nodes": 75,
+        "num_total_nodes": 1407,
+        "num_extracted_triples": 1662,
+        "num_triples_with_passage_node": 1784,
+        "num_synonymy_triples": 11164,
+        "num_total_triples": 14610
+    },
+    "retrieval_results": {
+        "Recall@1": 0.625,
+        "Recall@2": 0.675,
+        "Recall@5": 0.675
+    },
+    "bleu": "23.08",
+    "meteor": "37.75",
+    "rougeL": "41.85"
+}

@@ -1,0 +1,22 @@
+{
+    "major": "AM",
+    "dataset_style": "hcmus",
+    "embedding_model_name": "facebook/contriever",
+    "graph_info": {
+        "num_phrase_nodes": 1466,
+        "num_passage_nodes": 94,
+        "num_total_nodes": 1560,
+        "num_extracted_triples": 1817,
+        "num_triples_with_passage_node": 1957,
+        "num_synonymy_triples": 5838,
+        "num_total_triples": 9612
+    },
+    "retrieval_results": {
+        "Recall@1": 0.5769,
+        "Recall@2": 0.5962,
+        "Recall@5": 0.6154
+    },
+    "bleu": "25.62",
+    "meteor": "38.64",
+    "rougeL": "48.45"
+}

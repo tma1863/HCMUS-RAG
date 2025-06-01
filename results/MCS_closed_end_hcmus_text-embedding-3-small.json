@@ -1,0 +1,26 @@
+{
+    "major": "MCS",
+    "dataset_style": "hcmus",
+    "embedding_model_name": "text-embedding-3-small",
+    "graph_info": {
+        "num_phrase_nodes": 1550,
+        "num_passage_nodes": 90,
+        "num_total_nodes": 1640,
+        "num_extracted_triples": 1925,
+        "num_triples_with_passage_node": 2047,
+        "num_synonymy_triples": 4787,
+        "num_total_triples": 8759
+    },
+    "retrieval_results": {
+        "Recall@1": 0.64,
+        "Recall@2": 0.74,
+        "Recall@5": 0.8
+    },
+    "bleu": "43.89",
+    "meteor": "70.23",
+    "rougeL": "75.84",
+    "overall_qa_results": {
+        "ExactMatch": 0.42,
+        "F1": 0.7599
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "major": "AM",
+    "dataset_style": null,
+    "embedding_model_name": "facebook/contriever",
+    "graph_info": {
+        "num_phrase_nodes": 1517,
+        "num_passage_nodes": 94,
+        "num_total_nodes": 1611,
+        "num_extracted_triples": 1884,
+        "num_triples_with_passage_node": 2017,
+        "num_synonymy_triples": 5948,
+        "num_total_triples": 9849
+    },
+    "retrieval_results": {
+        "Recall@1": 0.5385,
+        "Recall@2": 0.5769,
+        "Recall@5": 0.5962
+    },
+    "bleu": "21.49",
+    "meteor": "37.95",
+    "rougeL": "43.25"
+}

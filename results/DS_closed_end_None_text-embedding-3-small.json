@@ -1,0 +1,26 @@
+{
+    "major": "DS",
+    "dataset_style": null,
+    "embedding_model_name": "text-embedding-3-small",
+    "graph_info": {
+        "num_phrase_nodes": 1294,
+        "num_passage_nodes": 75,
+        "num_total_nodes": 1369,
+        "num_extracted_triples": 1595,
+        "num_triples_with_passage_node": 1739,
+        "num_synonymy_triples": 3122,
+        "num_total_triples": 6456
+    },
+    "retrieval_results": {
+        "Recall@1": 0.775,
+        "Recall@2": 0.775,
+        "Recall@5": 0.9
+    },
+    "bleu": "38.02",
+    "meteor": "68.50",
+    "rougeL": "74.57",
+    "overall_qa_results": {
+        "ExactMatch": 0.5,
+        "F1": 0.7518
+    }
+}

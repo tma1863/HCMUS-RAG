@@ -1,0 +1,26 @@
+{
+    "major": "MCS",
+    "dataset_style": null,
+    "embedding_model_name": "text-embedding-3-small",
+    "graph_info": {
+        "num_phrase_nodes": 1545,
+        "num_passage_nodes": 90,
+        "num_total_nodes": 1635,
+        "num_extracted_triples": 1922,
+        "num_triples_with_passage_node": 2060,
+        "num_synonymy_triples": 4783,
+        "num_total_triples": 8765
+    },
+    "retrieval_results": {
+        "Recall@1": 0.9,
+        "Recall@2": 0.92,
+        "Recall@5": 0.96
+    },
+    "bleu": "40.93",
+    "meteor": "49.04",
+    "rougeL": "50.63",
+    "overall_qa_results": {
+        "ExactMatch": 0.0,
+        "F1": 0.5171
+    }
+}

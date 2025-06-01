@@ -1,0 +1,22 @@
+{
+    "major": "DS",
+    "dataset_style": null,
+    "embedding_model_name": "facebook/contriever",
+    "graph_info": {
+        "num_phrase_nodes": 1270,
+        "num_passage_nodes": 75,
+        "num_total_nodes": 1345,
+        "num_extracted_triples": 1577,
+        "num_triples_with_passage_node": 1703,
+        "num_synonymy_triples": 3569,
+        "num_total_triples": 6849
+    },
+    "retrieval_results": {
+        "Recall@1": 0.55,
+        "Recall@2": 0.625,
+        "Recall@5": 0.675
+    },
+    "bleu": "14.97",
+    "meteor": "29.32",
+    "rougeL": "33.64"
+}

@@ -1,0 +1,22 @@
+{
+    "major": "AM",
+    "dataset_style": "hcmus",
+    "embedding_model_name": "nvidia/NV-Embed-v2",
+    "graph_info": {
+        "num_phrase_nodes": 1501,
+        "num_passage_nodes": 94,
+        "num_total_nodes": 1595,
+        "num_extracted_triples": 1879,
+        "num_triples_with_passage_node": 2020,
+        "num_synonymy_triples": 11764,
+        "num_total_triples": 15663
+    },
+    "retrieval_results": {
+        "Recall@1": 0.5192,
+        "Recall@2": 0.6154,
+        "Recall@5": 0.6538
+    },
+    "bleu": "23.91",
+    "meteor": "36.95",
+    "rougeL": "47.51"
+}
