@@ -12,8 +12,9 @@ import pandas as pd
 load_dotenv()
 
 if __name__ == "__main__":
-    # Use getpass to securely input the API key
-
+    ## Reference: https://jayant017.medium.com/rag-using-langchain-part-3-vector-stores-and-retrievers-a75f4d14cbf3
+    ## https://milvus.io/docs/integrate_with_langchain.md
+    ## https://medium.com/@danushidk507/rag-vii-reranking-with-rrf-d8a13dba96de
     # Initialize OpenAI embeddings
     openai_embeddings = OpenAIEmbeddings()
     pca = PCA(n_components=3)
