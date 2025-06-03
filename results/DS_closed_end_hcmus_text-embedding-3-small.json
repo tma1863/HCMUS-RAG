@@ -3,24 +3,184 @@
     "dataset_style": "hcmus",
     "embedding_model_name": "text-embedding-3-small",
     "graph_info": {
-        "num_phrase_nodes": 1326,
+        "num_phrase_nodes": 1387,
         "num_passage_nodes": 75,
-        "num_total_nodes": 1401,
-        "num_extracted_triples": 1618,
-        "num_triples_with_passage_node": 1751,
-        "num_synonymy_triples": 3149,
-        "num_total_triples": 6518
+        "num_total_nodes": 1462,
+        "num_extracted_triples": 1688,
+        "num_triples_with_passage_node": 1810,
+        "num_synonymy_triples": 3201,
+        "num_total_triples": 6699
     },
     "retrieval_results": {
-        "Recall@1": 0.775,
-        "Recall@2": 0.825,
-        "Recall@5": 0.9
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 0.0
     },
-    "bleu": "35.32",
-    "meteor": "68.65",
-    "rougeL": "73.25",
+    "bleu": "26.16",
+    "meteor": "58.97",
+    "rougeL": "85.90",
     "overall_qa_results": {
-        "ExactMatch": 0.525,
-        "F1": 0.7321
-    }
+        "ExactMatch": 0.8205,
+        "F1": 0.8559
+    },
+    "predictions": [
+        "Yes",
+        "Windows operating system.",
+        "Fundamentals Computer Programming.",
+        "Nguyen Ngoc Long",
+        "Yes",
+        "Yes",
+        "Yes",
+        "R or SPSS.",
+        "5",
+        "Nguyen Thanh Binh",
+        "Fundamentals Computer Programming.",
+        "Yes",
+        "5",
+        "R and Python.",
+        "R",
+        "Linear programming problems, including original monomorphic, dual, and synthetic methods.",
+        "Yes",
+        "Linear Programming.",
+        "Data Structures and Algorithms.",
+        "Nguyen Dang Minh",
+        "Yes",
+        "Elective",
+        "software agent",
+        "8",
+        "Yes",
+        "Power BI",
+        "Yes",
+        "14",
+        "Yes",
+        "None.",
+        "Yes",
+        "Yes",
+        "even semester",
+        "Yes",
+        "No",
+        "Yes",
+        "Nguyen Vu Huy",
+        "No",
+        "Compulsory"
+    ],
+    "references": [
+        [
+            "yes"
+        ],
+        [
+            "Windows operating system"
+        ],
+        [
+            "Fundamentals Computer Programming"
+        ],
+        [
+            "Nguyen Ngoc Long"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "compulsory"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "R or SPSS "
+        ],
+        [
+            "5"
+        ],
+        [
+            "Nguyen Thanh Binh"
+        ],
+        [
+            "Fundamentals Computer Programming"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "6"
+        ],
+        [
+            "R or Python programming"
+        ],
+        [
+            "R statistical software"
+        ],
+        [
+            "linear programming problem"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Linear Programming"
+        ],
+        [
+            "Data Structures and Algorithms"
+        ],
+        [
+            "Nguyen Dang Minh"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "elective"
+        ],
+        [
+            "software agent"
+        ],
+        [
+            "8"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Power BI"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "14"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "none"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Nguyen Vu Huy"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "compulsory"
+        ]
+    ]
 }

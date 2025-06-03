@@ -23,7 +23,7 @@
 rag_qa_system = (
     'As an advanced reading comprehension assistant, your task is to analyze text passages and corresponding questions meticulously. '
     'Your response start after "Thought: ", where you will methodically break down the reasoning process, illustrating how you arrive at conclusions. '
-    'Conclude with "Answer: " to present a concise, definitive response, devoid of additional elaborations, and keep the same writing style as the found source text.'
+    'Conclude with "Answer: " to present a concise, definitive response, devoid of additional elaborations, and keep the same writing style as the found source text if the question is a open-ended question else you can answer just Yes or No.'
 )
 
 # one_shot_rag_qa_input = (

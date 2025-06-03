@@ -3,24 +3,184 @@
     "dataset_style": null,
     "embedding_model_name": "text-embedding-3-small",
     "graph_info": {
-        "num_phrase_nodes": 1294,
+        "num_phrase_nodes": 1333,
         "num_passage_nodes": 75,
-        "num_total_nodes": 1369,
-        "num_extracted_triples": 1595,
-        "num_triples_with_passage_node": 1739,
-        "num_synonymy_triples": 3122,
-        "num_total_triples": 6456
+        "num_total_nodes": 1408,
+        "num_extracted_triples": 1646,
+        "num_triples_with_passage_node": 1773,
+        "num_synonymy_triples": 3181,
+        "num_total_triples": 6600
     },
     "retrieval_results": {
-        "Recall@1": 0.775,
-        "Recall@2": 0.775,
-        "Recall@5": 0.9
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 0.0
     },
-    "bleu": "38.02",
-    "meteor": "68.50",
-    "rougeL": "74.57",
+    "bleu": "12.41",
+    "meteor": "53.31",
+    "rougeL": "74.54",
     "overall_qa_results": {
-        "ExactMatch": 0.5,
-        "F1": 0.7518
-    }
+        "ExactMatch": 0.641,
+        "F1": 0.7411
+    },
+    "predictions": [
+        "Yes, it is true.",
+        "Windows operating system.",
+        "Fundamentals Computer Programming.",
+        "Nguyen Ngoc Long.",
+        "Yes, it is true.",
+        "Compulsory.",
+        "True.",
+        "R or SPSS.",
+        "5.",
+        "Nguyen Thanh Binh.",
+        "Fundamentals Computer Programming.",
+        "Yes, it is true.",
+        "5.",
+        "R and Python.",
+        "R.",
+        "Linear programming problems.",
+        "Yes.",
+        "Linear Programming.",
+        "Data Structures and Algorithms.",
+        "Nguyen Dang Minh.",
+        "True.",
+        "Elective.",
+        "Software agent.",
+        "8.",
+        "Yes, it is true.",
+        "Power BI.",
+        "Yes.",
+        "14.",
+        "Yes.",
+        "None.",
+        "Yes.",
+        "True.",
+        "Even semester.",
+        "Yes, it is true.",
+        "No, it is not true.",
+        "Yes.",
+        "Nguyen Vu Huy.",
+        "No, General Biology 1 is not offered in the even semester.",
+        "Compulsory."
+    ],
+    "references": [
+        [
+            "yes"
+        ],
+        [
+            "Windows operating system"
+        ],
+        [
+            "Fundamentals Computer Programming"
+        ],
+        [
+            "Nguyen Ngoc Long"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "compulsory"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "R or SPSS "
+        ],
+        [
+            "5"
+        ],
+        [
+            "Nguyen Thanh Binh"
+        ],
+        [
+            "Fundamentals Computer Programming"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "6"
+        ],
+        [
+            "R or Python programming"
+        ],
+        [
+            "R statistical software"
+        ],
+        [
+            "linear programming problem"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Linear Programming"
+        ],
+        [
+            "Data Structures and Algorithms"
+        ],
+        [
+            "Nguyen Dang Minh"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "elective"
+        ],
+        [
+            "software agent"
+        ],
+        [
+            "8"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Power BI"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "14"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "none"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Nguyen Vu Huy"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "compulsory"
+        ]
+    ]
 }

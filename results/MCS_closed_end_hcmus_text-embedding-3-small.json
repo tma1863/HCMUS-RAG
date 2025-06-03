@@ -3,24 +3,224 @@
     "dataset_style": "hcmus",
     "embedding_model_name": "text-embedding-3-small",
     "graph_info": {
-        "num_phrase_nodes": 1550,
+        "num_phrase_nodes": 1555,
         "num_passage_nodes": 90,
-        "num_total_nodes": 1640,
-        "num_extracted_triples": 1925,
-        "num_triples_with_passage_node": 2047,
-        "num_synonymy_triples": 4787,
-        "num_total_triples": 8759
+        "num_total_nodes": 1645,
+        "num_extracted_triples": 1954,
+        "num_triples_with_passage_node": 2092,
+        "num_synonymy_triples": 4772,
+        "num_total_triples": 8818
     },
     "retrieval_results": {
-        "Recall@1": 0.64,
-        "Recall@2": 0.74,
-        "Recall@5": 0.8
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 0.0
     },
-    "bleu": "43.89",
-    "meteor": "70.23",
-    "rougeL": "75.84",
+    "bleu": "0.00",
+    "meteor": "63.28",
+    "rougeL": "87.76",
     "overall_qa_results": {
-        "ExactMatch": 0.42,
-        "F1": 0.7599
-    }
+        "ExactMatch": 0.8571,
+        "F1": 0.8728
+    },
+    "predictions": [
+        "No",
+        "Odd semester",
+        "Compulsory subject",
+        "No",
+        "even semester",
+        "odd semester",
+        "Elective",
+        "No",
+        "Yes",
+        "4",
+        "English 1.",
+        "English 2.",
+        "Yes",
+        "Ong Thanh Hai",
+        "Yes",
+        "Analysis 1A.",
+        "Calculus 1A.",
+        "Yes",
+        "Even semester.",
+        "MAPLE software.",
+        "Yes",
+        "C programming language.",
+        "Pham The Nhan",
+        "Matlab",
+        "GAP",
+        "5",
+        "General Biology I.",
+        "Yes",
+        "odd semester",
+        "Yes",
+        "General Chemistry 1.",
+        "General Chemistry 2.",
+        "odd semester",
+        "No",
+        "odd semester",
+        "The teaching methods are not specified in the text.",
+        "The passage does not specify the teaching methods in General Physics 1.",
+        "Yes",
+        "Yes",
+        "odd semester",
+        "R or SPSS.",
+        "Yes",
+        "Le Van Hop",
+        "C++",
+        "Radon-Nikodym Theorem.",
+        "Yes",
+        "Infinite-dimensional spaces, Euclidean spaces, l^p spaces, L^p spaces, bounded function spaces, Hilbert space.",
+        "The text does not specify the teaching methods.",
+        "Nguyen Thanh Binh"
+    ],
+    "references": [
+        [
+            "No"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "Compulsory category"
+        ],
+        [
+            "No"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "Elective"
+        ],
+        [
+            "No"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "4"
+        ],
+        [
+            "English 1"
+        ],
+        [
+            "English 2"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Ong Thanh Hai"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Analysis 1A"
+        ],
+        [
+            "Calculus 1A"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "MAPLE software"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "C programming language"
+        ],
+        [
+            "Pham The Nhan"
+        ],
+        [
+            "Matlab"
+        ],
+        [
+            "GAP"
+        ],
+        [
+            "6"
+        ],
+        [
+            "General Biology I"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "General Chemistry 1"
+        ],
+        [
+            "General Chemistry 2"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "preaching, guiding, discussion"
+        ],
+        [
+            "Lecture, discussion"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "R or SPSS"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Le Van Hop"
+        ],
+        [
+            "C ++"
+        ],
+        [
+            "Radon-Nikodym Theorem"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "infinite-dimensional spaces"
+        ],
+        [
+            "Lecture, lab works"
+        ],
+        [
+            "Nguyen Thanh Binh"
+        ]
+    ]
 }

@@ -432,7 +432,6 @@ class HippoRAG:
                                                                                          passage_node_weight=self.global_config.passage_node_weight)
 
             top_k_docs = [self.chunk_embedding_store.get_row(self.passage_node_keys[idx])["content"] for idx in sorted_doc_ids[:num_to_retrieve]]
-
             retrieval_results.append(QuerySolution(question=query, docs=top_k_docs, doc_scores=sorted_doc_scores[:num_to_retrieve]))
 
         retrieve_end_time = time.time()  # Record end time

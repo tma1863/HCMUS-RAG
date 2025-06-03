@@ -3,24 +3,224 @@
     "dataset_style": null,
     "embedding_model_name": "text-embedding-3-small",
     "graph_info": {
-        "num_phrase_nodes": 1529,
+        "num_phrase_nodes": 1553,
         "num_passage_nodes": 90,
-        "num_total_nodes": 1619,
-        "num_extracted_triples": 1883,
-        "num_triples_with_passage_node": 2020,
-        "num_synonymy_triples": 4727,
-        "num_total_triples": 8630
+        "num_total_nodes": 1643,
+        "num_extracted_triples": 1927,
+        "num_triples_with_passage_node": 2070,
+        "num_synonymy_triples": 4774,
+        "num_total_triples": 8771
     },
     "retrieval_results": {
-        "Recall@1": 0.68,
-        "Recall@2": 0.76,
-        "Recall@5": 0.8
+        "Recall@1": 0.0,
+        "Recall@2": 0.0,
+        "Recall@5": 0.0
     },
-    "bleu": "39.66",
-    "meteor": "63.46",
-    "rougeL": "72.03",
+    "bleu": "0.00",
+    "meteor": "56.98",
+    "rougeL": "73.69",
     "overall_qa_results": {
-        "ExactMatch": 0.36,
-        "F1": 0.7191
-    }
+        "ExactMatch": 0.6735,
+        "F1": 0.7322
+    },
+    "predictions": [
+        "No, it is not true.",
+        "Odd semester.",
+        "Compulsory.",
+        "No, it is not true.",
+        "Even semester.",
+        "Odd semester.",
+        "Elective.",
+        "No, it is not true.",
+        "Yes.",
+        "4.",
+        "English 1.",
+        "English 2.",
+        "True.",
+        "Ong Thanh Hai.",
+        "Yes.",
+        "Analysis 1A.",
+        "Calculus 1A.",
+        "True.",
+        "Even semester.",
+        "MAPLE software.",
+        "Yes.",
+        "C programming language.",
+        "Pham The Nhan.",
+        "Matlab.",
+        "GAP.",
+        "6.",
+        "General Biology I.",
+        "True.",
+        "Odd semester.",
+        "Yes, it is true that there are no prerequisites for General Chemistry 2.",
+        "General Chemistry 1.",
+        "General Chemistry 2.",
+        "Odd semester.",
+        "No, the text does not provide information on teaching methods for General Biology II.",
+        "Odd semester.",
+        "The teaching methods in Labwork on General Biology II likely include hands-on experiments, demonstrations, group work, and discussions.",
+        "The passage does not specify teaching methods, but implies lectures, problem-solving, and group work.",
+        "Yes, it is true.",
+        "No, it is not true; students practice 10 out of 13 experiments.",
+        "Odd semester.",
+        "R or SPSS.",
+        "Yes, it is true.",
+        "Le Van Hop.",
+        "C++.",
+        "Radon-Nikodym Theorem.",
+        "Yes.",
+        "Infinite-dimensional spaces, Euclidean spaces, l^p spaces, L^p spaces, bounded function spaces, Hilbert spaces.",
+        "The passage does not specify the teaching methods.",
+        "Nguyen Thanh Binh."
+    ],
+    "references": [
+        [
+            "No"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "Compulsory category"
+        ],
+        [
+            "No"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "Elective"
+        ],
+        [
+            "No"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "4"
+        ],
+        [
+            "English 1"
+        ],
+        [
+            "English 2"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Ong Thanh Hai"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Analysis 1A"
+        ],
+        [
+            "Calculus 1A"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "even semester"
+        ],
+        [
+            "MAPLE software"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "C programming language"
+        ],
+        [
+            "Pham The Nhan"
+        ],
+        [
+            "Matlab"
+        ],
+        [
+            "GAP"
+        ],
+        [
+            "6"
+        ],
+        [
+            "General Biology I"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "General Chemistry 1"
+        ],
+        [
+            "General Chemistry 2"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "preaching, guiding, discussion"
+        ],
+        [
+            "Lecture, discussion"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "odd semester"
+        ],
+        [
+            "R or SPSS"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "Le Van Hop"
+        ],
+        [
+            "C ++"
+        ],
+        [
+            "Radon-Nikodym Theorem"
+        ],
+        [
+            "yes"
+        ],
+        [
+            "infinite-dimensional spaces"
+        ],
+        [
+            "Lecture, lab works"
+        ],
+        [
+            "Nguyen Thanh Binh"
+        ]
+    ]
 }

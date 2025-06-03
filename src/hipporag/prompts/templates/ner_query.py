@@ -26,10 +26,27 @@ query_prompt_one_shot_output = """
 # query_prompt_template = """
 # Question: {}
 
+query_prompt_one_shot_input_1 = """Please extract all named entities that are important for solving the questions below.
+Place the named entities in json format.
+
+Question: What is the title of course ID MTH10201?
+
+"""
+
+# query_prompt_one_shot_output = """
+# {"named_entities": ["First for Women", "Arthur's Magazine"]}
+# """
+
+query_prompt_one_shot_output_1 = """
+{"named_entities": ["MTH10201"]}
+"""
+
 # """
 prompt_template = [
     {"role": "system", "content": ner_system},
     {"role": "user", "content": query_prompt_one_shot_input},
     {"role": "assistant", "content": query_prompt_one_shot_output},
+    {"role": "user", "content": query_prompt_one_shot_input_1},
+    {"role": "assistant", "content": query_prompt_one_shot_output_1},
     {"role": "user", "content": "Question: ${query}"}
 ]
