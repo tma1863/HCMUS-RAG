@@ -44,7 +44,7 @@ class OpenIE:
 
     def ner(self, chunk_key: str, passage: str) -> NerRawOutput:
         # PREPROCESSING
-        ner_input_message = self.prompt_template_manager.render(name='ner', passage=passage)
+        ner_input_message = self.prompt_template_manager.render(name='ner', passage=passage, save_dir=self.llm_model.cache_dir)
         raw_response = ""
         metadata = {}
         try:
@@ -91,7 +91,8 @@ class OpenIE:
         messages = self.prompt_template_manager.render(
             name='triple_extraction',
             passage=passage,
-            named_entity_json=json.dumps({"named_entities": named_entities})
+            named_entity_json=json.dumps({"named_entities": named_entities}),
+            save_dir=self.llm_model.cache_dir
         )
 
         raw_response = ""

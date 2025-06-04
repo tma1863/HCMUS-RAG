@@ -135,7 +135,7 @@ class PromptTemplateManager:
                 ]
                 ## dump the rendered chat history to a file
                 import json
-                with open(f"./outputs/rendered_{name}.json", "w") as f:
+                with open(f"{kwargs['save_dir']}/rendered_{name}.json", "w") as f:
                     json.dump(rendered_list, f, indent=4)
                 logger.debug(f"Successfully rendered chat history template '{name}' with variables: {kwargs}.")
                 return rendered_list

@@ -1,0 +1,7 @@
+method&closed_end:Recall@1&closed_end:Recall@2&closed_end:Recall@5&opened_end:Recall@1&opened_end:Recall@2&opened_end:Recall@5&Recall@1&Recall@2&Recall@5
+bm25&0.400&0.600&0.800&0.780&0.840&0.840&0.590&0.720&0.820
+faiss&0.580&0.760&0.880&0.920&0.920&0.940&0.750&0.840&0.910
+hcmus_contriever&0.740&0.760&0.800&0.800&0.920&0.940&0.770&0.840&0.870
+hcmus_GritLM-7B&0.700&0.800&0.800&0.880&0.960&0.960&0.790&0.880&0.880
+hcmus_NV-Embed-v2&0.740&0.800&0.800&0.920&0.940&0.960&0.830&0.870&0.880
+hcmus_text-embedding-3-small&0.660&0.760&0.800&0.900&0.960&0.960&0.780&0.860&0.880

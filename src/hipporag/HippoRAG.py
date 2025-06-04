@@ -711,7 +711,7 @@ class HippoRAG:
                 prompt_dataset_name = 'musique'
             # breakpoint()
             all_qa_messages.append(
-                self.prompt_template_manager.render(name=f'rag_qa_{prompt_dataset_name}', prompt_user=prompt_user))
+                self.prompt_template_manager.render(name=f'rag_qa_{prompt_dataset_name}', prompt_user=prompt_user, save_dir=self.global_config.save_dir))
 
         all_qa_results = [self.llm_model.infer(qa_messages) for qa_messages in tqdm(all_qa_messages, desc="QA Reading")]
 
