@@ -91,8 +91,8 @@ class StandardRAG:
                 embedding_model_name=self.global_config.embedding_model_name)(global_config=self.global_config,
                                                                               embedding_model_name=self.global_config.embedding_model_name)
 
-        import ipdb;
-        ipdb.set_trace()
+        # import ipdb;
+        # ipdb.set_trace()
 
         self.chunk_embedding_store = EmbeddingStore(self.embedding_model,
                                                     os.path.join(self.working_dir, "chunk_embeddings"),
@@ -103,6 +103,9 @@ class StandardRAG:
         self.ppr_time = 0
         self.rerank_time = 0
         self.all_retrieval_time = 0
+
+        self.prompt_template_manager = PromptTemplateManager(role_mapping={"system": "system", "user": "user", "assistant": "assistant"})
+
 
     def index(self, docs: List[str]):
         """
@@ -201,7 +204,7 @@ class StandardRAG:
 
         # Evaluate retrieval
         if gold_docs is not None:
-            k_list = [1, 2, 5, 10, 20, 30, 50, 100, 150, 200]
+            k_list = [1, 2, 5]
             overall_retrieval_result, example_retrieval_results = retrieval_recall_evaluator.calculate_metric_scores(
                 gold_docs=gold_docs, retrieved_docs=[retrieval_result.docs for retrieval_result in retrieval_results],
                 k_list=k_list)
@@ -322,7 +325,7 @@ class StandardRAG:
                     f"rag_qa_{self.global_config.dataset} does not have a customized prompt template. Using MUSIQUE's prompt template instead.")
                 prompt_dataset_name = 'musique'
             all_qa_messages.append(
-                self.prompt_template_manager.render(name=f'rag_qa_{prompt_dataset_name}', prompt_user=prompt_user))
+                self.prompt_template_manager.render(name=f'rag_qa_{prompt_dataset_name}', prompt_user=prompt_user, save_dir=self.global_config.save_dir))
 
         all_qa_results = [self.llm_model.infer(qa_messages) for qa_messages in tqdm(all_qa_messages, desc="QA Reading")]
 
