@@ -88,7 +88,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     major = args.major
     kind_of_qa = args.kind_of_qa
-    assert kind_of_qa in ["closed_end", "opened_end"], "kind_of_qa must be either 'closed_end' or 'opened_end'."
+    assert kind_of_qa in ["closed_end", "opened_end", "multihop2"], "kind_of_qa must be either 'closed_end' or 'opened_end'."
     output_dir = 'outputs'  # Define save directory for HippoRAG objects (each LLM/Embedding model combination will create a new subdirectory)
     cache_dir = os.path.join(
         output_dir,

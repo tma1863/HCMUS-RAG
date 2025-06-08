@@ -213,6 +213,77 @@ class StandardRAG:
             return retrieval_results, overall_retrieval_result
         else:
             return retrieval_results
+    
+    def retrieve_dpr(self,
+                     queries: List[str],
+                     num_to_retrieve: int = None,
+                     gold_docs: List[List[str]] = None) -> List[QuerySolution] | Tuple[List[QuerySolution], Dict]:
+        """
+        Performs retrieval using a DPR framework, which consists of several steps:
+        - Dense passage scoring
+
+        Parameters:
+            queries: List[str]
+                A list of query strings for which documents are to be retrieved.
+            num_to_retrieve: int, optional
+                The maximum number of documents to retrieve for each query. If not specified, defaults to
+                the `retrieval_top_k` value defined in the global configuration.
+            gold_docs: List[List[str]], optional
+                A list of lists containing gold-standard documents corresponding to each query. Required
+                if retrieval performance evaluation is enabled (`do_eval_retrieval` in global configuration).
+
+        Returns:
+            List[QuerySolution] or (List[QuerySolution], Dict)
+                If retrieval performance evaluation is not enabled, returns a list of QuerySolution objects, each containing
+                the retrieved documents and their scores for the corresponding query. If evaluation is enabled, also returns
+                a dictionary containing the evaluation metrics computed over the retrieved results.
+
+        Notes
+        -----
+        - Long queries with no relevant facts after reranking will default to results from dense passage retrieval.
+        """
+        retrieve_start_time = time.time()  # Record start time
+
+        if num_to_retrieve is None:
+            num_to_retrieve = self.global_config.retrieval_top_k
+
+        if gold_docs is not None:
+            retrieval_recall_evaluator = RetrievalRecall(global_config=self.global_config)
+
+        if not self.ready_to_retrieve:
+            self.prepare_retrieval_objects()
+
+        self.get_query_embeddings(queries)
+
+        retrieval_results = []
+
+        for q_idx, query in tqdm(enumerate(queries), desc="Retrieving", total=len(queries)):
+            logger.info('No facts found after reranking, return DPR results')
+            sorted_doc_ids, sorted_doc_scores = self.dense_passage_retrieval(query)
+
+            top_k_docs = [self.chunk_embedding_store.get_row(self.passage_node_keys[idx])["content"] for idx in
+                          sorted_doc_ids[:num_to_retrieve]]
+
+            retrieval_results.append(
+                QuerySolution(question=query, docs=top_k_docs, doc_scores=sorted_doc_scores[:num_to_retrieve]))
+
+        retrieve_end_time = time.time()  # Record end time
+
+        self.all_retrieval_time += retrieve_end_time - retrieve_start_time
+
+        logger.info(f"Total Retrieval Time {self.all_retrieval_time:.2f}s")
+
+        # Evaluate retrieval
+        if gold_docs is not None:
+            k_list = [1, 2, 5]
+            overall_retrieval_result, example_retrieval_results = retrieval_recall_evaluator.calculate_metric_scores(
+                gold_docs=gold_docs, retrieved_docs=[retrieval_result.docs for retrieval_result in retrieval_results],
+                k_list=k_list)
+            logger.info(f"Evaluation results for retrieval: {overall_retrieval_result}")
+
+            return retrieval_results, overall_retrieval_result
+        else:
+            return retrieval_results
 
     def rag_qa(self,
                queries: List[str|QuerySolution],
