@@ -45,6 +45,7 @@ categories, bringing it one step closer to true long-term memory.
 conda create -n hipporag python=3.10
 conda activate hipporag
 pip install hipporag
+pip install -r requirements.txt
 ```
 Initialize the environmental variables and activate the environment:
 
