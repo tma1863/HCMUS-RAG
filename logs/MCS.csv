@@ -1,0 +1,112 @@
+course_id,course_name,prerequisites,answer
+BAA00101,Marxist-Leninist Philosophy,none,none
+BAA00102,Marxist-Leninist Political Economy,none,none
+BAA00103,Scientific Socialism,none,none
+BAA00104,History of Vietnamese Communist Party,none,none
+BAA00003,Ho Chi Minh’s Ideology,none,none
+BAA00004,General Law,none,none
+BAA00005,General Economics,none,none
+BAA00006,Psychology,none,none
+BAA00008,Group-working and Learning Skills,none,none
+BAA00011,English 1,none,none
+BAA00012,English 2,english 1,English 1
+BAA00013,English 3,english 2,English 2
+BAA00014,English 4,english 3,English 3
+MTH00010,Analysis 1A,none,none
+MTH00011,Calculus 1A,none,none
+MTH00012,Analysis 2A,analysis 1a,Analysis 1A
+MTH00013,Calculus 2A,calculus 1a,Calculus 1A
+MTH00014,Analysis 3A,analysis 1a,Analysis 1A
+MTH00014,Analysis 3A,calculus 1a,Calculus 1A
+MTH00014,Analysis 3A,analysis 2a,Analysis 2A
+MTH00015,Analysis 4A,analysis 1a,Analysis 1A
+MTH00015,Analysis 4A,analysis 2a.,Analysis 2A
+MTH00030,Linear Algebra,none,none
+MTH00031,Abstract Algebra,linear algebra,Linear Algebra
+MTH00055,Fundamentals of Computer Programming,none,none
+MTH00083,Linear Algebra Practice,none,none
+MTH00087,Computational Software Laboratory,none,none
+MTH00084,Abstract Algebra Practice,linear algebra,Linear Algebra
+MTH00084,Abstract Algebra Practice,linear algebra practice,Linear Algebra Practice
+ENV00001,General Environment,none,none
+ENV00003,Human and Environment,general biology,General Biology I
+GEO00002,Earth Science,none,none
+CHE00001,General Chemistry 1,none,none
+CHE00002,General Chemistry 2,none,none
+CHE00081,General Chemistry Laboratory 1,general chemistry 1,General Chemistry 1
+CHE00082,General Chemistry Laboratory 2,general chemistry 2,General Chemistry 2
+BIO00001,General Biology I,none,none
+BIO00002,General Biology II,general biology i,General Biology I
+BIO00081,Labwork on General Biology I,general biology I,General Biology I
+BIO00082,Labwork on General Biology II,general biology II,General Biology II
+PHY00001,General Physics 1,none,none
+PHY00002,General Physics 2,calculus 1a,Calculus 1A
+PHY00002,General Physics 2,general physics 1,General Physics 1
+PHY00081,Labwork on General Physics,none,none
+CSC00003,Introduction to Informatics,none,none
+MTH10404,Mathematical Statistics,measure theory and probability,Measure Theory and Probability
+MTH10404,Mathematical Statistics,analysis a1,Analysis 1A
+MTH10405,Data Structures and Algorithms,fundamentals of computer programming,Fundamentals of Computer Programming
+MTH10406,Discrete Mathematics,fundamentals of computer programming,Fundamentals of Computer Programming
+MTH10407,Object Oriented Programming,data structures and algorithms,Data Structures and Algorithms
+MTH10407,Object Oriented Programming,fundamentals of computer programming,Fundamentals of Computer Programming
+MTH10401,Measure Theory and Probability,analysis a1,Analysis 1A
+MTH10402,Algebra A2,linear algebra,Linear Algebra
+MTH10403,Functional Analysis,analysis 1a,Analysis 1A
+MTH10403,Functional Analysis,analysis 2a,Analysis 2A
+MTH10403,Functional Analysis,analysis 3a,Analysis 3A
+MTH10312,Introduction To Database Systems,none,none
+MTH10318,Introduction to Artificial Intelligence,data structures and algorithms,Data Structures and Algorithms
+MTH10318,Introduction to Artificial Intelligence,discrete mathematics,Discrete Mathematics
+MTH10353,Introduction to Machine Learning,measure theory and probability,Measure Theory and Probability
+MTH10353,Introduction to Machine Learning,mathematical statistics,Mathematical Statistics
+MTH10353,Introduction to Machine Learning,linear algebra,Linear Algebra
+MTH10513,Analysis of Statistical Data,none,none
+MTH10358,Data Mining,fundamentals of computer programming,Fundamentals of Computer Programming
+MTH10605,Python for Data Science,none,none
+MTH10317,Image Processing and Analysis,data structures and algorithms,Data Structures and Algorithms
+MTH10319,Introduction To Cryptography,linear algebra a1,Linear Algebra
+MTH10320,Digital Signal Processing,none,none
+MTH10321,High Performance Computing,data structures and algorithms,Data Structures and Algorithms
+MTH10321,High Performance Computing,discrete mathematics,Discrete Mathematics
+MTH10321,High Performance Computing,object-oriented programming,Object Oriented Programming
+MTH10324,Arithmetic and Algorithms,abstract algebra,Abstract Algebra
+MTH10308,Object-Oriented Software Development,none,none
+MTH10309,System and Network Administration,computer networks,Computer Networks
+MTH10310,.NET Programming,object oriented programming,Object Oriented Programming
+MTH10311,Computer Networks,none,none
+MTH10313,UNIX Operating System,none,none
+MTH10314,Software Project Management,object-oriented software development,Object-Oriented Software Development
+MTH10315,Analysis and Design of Information Systems,introduction to database systems,Introduction To Database Systems
+MTH10315,Analysis and Design of Information Systems,object-oriented programming,Object Oriented Programming
+MTH10316,Java Programming,object-oriented programming,Object Oriented Programming
+MTH10323,Multidimensional Signal Processing,linear algebra,Linear Algebra
+MTH10323,Multidimensional Signal Processing,measure theory and probability,Measure Theory and Probability
+MTH10323,Multidimensional Signal Processing,mathematical statistics,Mathematical Statistics
+MTH10325,Algorithm Analysis,discrete mathematics,Discrete Mathematics
+MTH10344,Database Management System,introduction to database systems,Introduction To Database Systems
+MTH10354,Advance Machine Learning,introduction to artificial intelligence,Introduction to Artificial Intelligence
+MTH10620,Seminar on Data Science,none,none
+MTH10608,Data Visualization,none,none
+MTH10607,Numerical Methods for Data Science,none,none
+MTH10322,Pattern Recognition,none,none
+MTH10332,Software Testing 1,none,none
+MTH10336,Software Testing 2,software testing,Software Testing 1
+MTH10336,Software Testing 2,object oriented programming,Object Oriented Programming
+MTH10355,Mobile Computing,none,none
+MTH10326,Seminar on Applied Mathematical Computer Science,none,none
+MTH10331,Image Transformation and Processing,none,none
+MTH10333,Design and Build Web Applications,fundamentals of computer programming,Fundamentals of Computer Programming
+MTH10337,Web Programming with PHP,introduction to database systems,Introduction To Database Systems
+MTH10340,Pattern Recognition and Analysis,none,none
+MTH10346,Seminar on Computer Science,none,none
+MTH10334,Web Programming with J2EE,introduction to database systems,Introduction To Database Systems
+MTH10334,Web Programming with J2EE,java programming,Java Programming
+MTH10359,Natural Language Processing,introduction to machine learning,Introduction to Machine Learning
+MTH10359,Natural Language Processing,introduction to artificial intelligence,Introduction to Artificial Intelligence
+MTH10450,Optimization Algorithms,none,none
+MTH10619,Multivariate Statistics,linear algebra,Linear Algebra
+MTH10619,Multivariate Statistics,mathematical statistics,Mathematical Statistics
+MTH10595,Graduation Thesis,successfully completed 96/131 credits,successfully completed 96/131 credits
+MTH10549,Internship,none,none
+MTH10617,"Surveys of Mathematics, Computer Science, and Specializations",none,none

@@ -1,0 +1,81 @@
+course_id,course_name,prerequisites,answer
+BAA00101,Marxist-Leninist Philosophy,none,none
+BAA00102,Marxist-Leninist Political Economy,none,none
+BAA00103,Scientific Socialism,none,none
+BAA00104,History of Vietnamese Communist Party,none,none
+BAA00003,HoChiMinh’s Ideology,none,none
+BAA00004,General Law,none,none
+BAA00005,General Economics,none,none
+BAA00006,Psychology,none,none
+BAA00008,Group-working and Learning Skills,none,none
+BAA00011,English 1,none,none
+BAA00012,English 2,english 1,English 1
+BAA00013,English 3,english 2,English 2
+BAA00014,English 4,english 3,English 3
+MTH00003,Calculus 1B,none,none
+MTH00081,Calculus 1B Practice,none,none
+MTH00004,Calculus 2B,calculus 1b,Calculus 1B
+MTH00082,Calculus 2B Practice,none,none
+MTH00030,Linear Algebra,none,none
+MTH00083,Linear Algebra Practice,none,none
+MTH00040,Probability and Statistics,calculus 1b.,Calculus 1B
+MTH00085,Probability and Statistics Practice,calculus 1b,Calculus 1B
+MTH00041,Discrete Mathematics,none,none
+MTH00086,Discrete Mathematics Practice,none,none
+MTH00050,Combinatorics,none,none
+MTH00055,Fundamentals Computer Programming,none,none
+MTH00087,Computational Software Laboratory,none,none
+CSC00004,Introduction to Information Technology,none,none
+ENV00001,General Environment,none,none
+ENV00003,Human and Environment,general biology,General Biology 1
+GEO00002,Earth science,none,none
+CHE00001,General Chemistry 1,none,none
+CHE00002,General Chemistry 2,none,none
+CHE00081,General Chemistry Laboratory 1,general chemistry 1,General Chemistry 1
+CHE00082,General Chemistry Laboratory 2,general chemistry 2,General Chemistry 2
+BIO00001,General Biology 1,none,none
+BIO00002,General Biology 2,general biology i,General Biology 1
+BIO00081,Labwork on General Biology 1,general biology I,General Biology 1
+BIO00082,Labwork on General Biology 2,general biology II,General Biology 1
+PHY00001,General Physics 1,none,none
+PHY00002,General Physics 2,calculus 1b,Calculus 1B
+PHY00002,General Physics 2,general physics 1,General Physics 1
+PHY00081,Labwork on General Physics,none,none
+CSC00003,Introduction to Informatics,none,none
+MTH10107,Advanced Programming,fundamentals of computer programming,Fundamentals Computer Programming
+MTH10407,Object Oriented Programming,data structures and algorithms,Data Structures and Algorithms
+MTH10407,Object Oriented Programming,fundamentals of computer programming,Fundamentals Computer Programming
+MTH10405,Data Structures and Algorithms,fundamentals of computer programming,Fundamentals Computer Programming
+MTH10312,Introduction to Database Systems,none,none
+MTH10311,Computer Networks,none,none
+MTH10404,Mathematical Statistics,probability and statistics,Probability and Statistics
+MTH10171,Introduction to Data Science,none,none
+MTH10318,Introduction to Artificial Intelligence,data structures and algorithms,Data Structures and Algorithms
+MTH10318,Introduction to Artificial Intelligence,discrete mathematics,Discrete Mathematics
+MTH10358,Data Mining,fundamentals of computer programming,Fundamentals Computer Programming
+MTH10353,Introduction to Machine Learning,probability and statistics,Probability and Statistics
+MTH10353,Introduction to Machine Learning,linear algebra,Linear Algebra
+MTH10605,Python for Data Science,none,none
+MTH10619,Multivariate Statistics,linear algebra,Linear Algebra
+MTH10619,Multivariate Statistics,mathematical statistics,Mathematical Statistics
+MTH10513,Analysis of Statistical Data,none,none
+MTH10449,Linear Programming,none,none
+MTH10450,Optimization Algorithms,none,none
+MTH10446,Operations Research,linear programming,Linear Programming
+MTH10624,Social Network Analysis,data structures and algorithms,Data Structures and Algorithms
+MTH10203,Mathematical Finance Models,none,none
+MTH10344,Database Management System,introduction to database systems,Introduction to Database Systems
+MTH10606,Introduction to Big Data,none,none
+MTH10356,Advanced Artificial Intelligence,none,none
+MTH10352,Parallel Programming,data structures and algorithms,Data Structures and Algorithms
+MTH10354,Advance Machine Learning,introduction to artificial intelligence,Introduction to Artificial Intelligence
+MTH10608,Data Visualization,none,none
+MTH10607,Numerical Methods for Data Science,none,none
+MTH10622,Deep Learning for Data Science,none,none
+MTH10623,Recommender System,introduction to artificial intelligence,Introduction to Artificial Intelligence
+MTH10620,Seminar on Data Science,none,none
+MTH10595,Graduation Thesis,successfully completed 96/131 credits,successfully completed 96/131 credits
+MTH10549,Internship,none,none
+MTH10626,Soft Skill,none,none
+MTH10627,Entrepreneurship,none,none
+MTH10597,Graduation Project,successfully completed 96/131 credits,successfully completed 96/131 credits

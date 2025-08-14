@@ -1,0 +1,119 @@
+course_id,course_name,prerequisites,answer
+BAA00101,Marxist-Leninist Philosophy,none,none
+BAA00102,Marxist-Leninist Political Economy,none,none
+BAA00103,Scientific Socialism,none,none
+BAA00104,History of Vietnamese Communist Party,none,none
+BAA00003,Ho Chi Minh’s Ideology,none,none
+BAA00004,General Law,none,none
+BAA00005,General Economics,none,none
+BAA00006,Psychology,none,none
+BAA00008,Group-working and Learning Skills,none,none
+BAA00011,English 1,none,none
+BAA00012,English 2,english 1,English 1
+BAA00013,English 3,english 2,English 2
+BAA00014,English 4,english 3,English 3
+MTH00010,Analysis 1A,none,none
+MTH00011,Calculus 1A,none,none
+MTH00012,Analysis 2A,analysis 1a,Analysis 1A
+MTH00013,Calculus 2A,calculus 1a,Calculus 1A
+MTH00014,Analysis 3A,analysis 1a,Analysis 1A
+MTH00014,Analysis 3A,calculus 1a,Calculus 1A
+MTH00014,Analysis 3A,analysis 2a,Analysis 2A
+MTH00015,Analysis 4A,analysis 1a,Analysis 1A
+MTH00015,Analysis 4A,analysis 2a.,Analysis 2A
+MTH00030,Linear Algebra,none,none
+MTH00031,Abstract Algebra,linear algebra,Linear Algebra
+MTH00055,Fundamentals of Computer Programming,none,none
+MTH00083,Linear Algebra Practice,none,none
+MTH00087,Computational Software Laboratory,none,none
+MTH00084,Abstract Algebra Practice,linear algebra,Linear Algebra
+MTH00084,Abstract Algebra Practice,linear algebra practice,Linear Algebra Practice
+ENV00001,General Environment,none,none
+ENV00003,Human and Environment,general biology,General Biology I
+GEO00002,Earth Science,none,none
+CHE00001,General Chemistry 1,none,none
+CHE00002,General Chemistry 2,none,none
+CHE00081,General Chemistry Laboratory 1,general chemistry 1,General Chemistry 1
+CHE00082,General Chemistry Laboratory 2,general chemistry 2,General Chemistry 2
+BIO00001,General Biology I,none,none
+BIO00002,General Biology II,general biology i,General Biology I
+BIO00081,Labwork on General Biology I,general biology I,General Biology I
+BIO00082,Labwork on General Biology II,general biology II,General Biology II
+PHY00001,General Physics 1,none,none
+PHY00002,General Physics 2,calculus 1a,Calculus 1A
+PHY00002,General Physics 2,general physics 1,General Physics 1
+PHY00081,Labwork on General Physics,none,none
+CSC00003,Introduction to Informatics,none,none
+MTH10401,Measure Theory and Probability,analysis a1,Analysis 1A
+MTH10402,Algebra A2,linear algebra,Linear Algebra
+MTH10403,Functional Analysis,analysis 1a,Analysis 1A
+MTH10403,Functional Analysis,analysis 2a,Analysis 2A
+MTH10403,Functional Analysis,analysis 3a,Analysis 3A
+MTH10404,Mathematical Statistics,measure theory and probability,Measure Theory and Probability
+MTH10404,Mathematical Statistics,analysis a1,Analysis 1A
+MTH10410,Numerical Analysis 1,calculus 1a,Calculus 1A
+MTH10410,Numerical Analysis 1,calculus 2a,Calculus 2A
+MTH10410,Numerical Analysis 1,computational software laboratory,Computational Software Laboratory
+MTH10413,Equations of Mathematical Physics,calculus 1a,Calculus 1A
+MTH10413,Equations of Mathematical Physics,calculus 2a,Calculus 2A
+MTH10413,Equations of Mathematical Physics,analysis 1a,Analysis 1A
+MTH10427,Theoretical mechanics,knowing calculus and linear algebra.,Linear Algebra
+MTH10428,Continuum mechanics,knowing calculus and linear algebra.,Linear Algebra
+MTH10429,Finite Element Method,none,none
+MTH10412,Complex Variable Functions,analysis 1a,Analysis 1A
+MTH10412,Complex Variable Functions,analysis 2a,Analysis 2A
+MTH10412,Complex Variable Functions,analysis 3a,Analysis 3A
+MTH10412,Complex Variable Functions,analysis 4a,Analysis 4A
+MTH10434,Solid Mechanics,continuum mechanics,Continuum mechanics
+MTH10435,Fluid mechanics,theoretical mechanics,Theoretical mechanics
+MTH10101,Pedagogical Psychology,none,none
+MTH10102,Optimal Teaching and Learning Methods,none,none
+MTH10104,General Education,none,none
+MTH10105,Didactics of Teaching,none,none
+MTH10106,Elementary Number Theory and Mathematical Logic,none,none
+MTH10110,Methods of Teaching Mathematics 1,none,none
+MTH10111,Methods of Teaching Mathematics 2,none,none
+MTH10112,Pedagogical Practice,pedagogical psychology,Pedagogical Psychology
+MTH10112,Pedagogical Practice,general education,General Education
+MTH10112,Pedagogical Practice,didactic of teaching,Didactics of Teaching
+MTH10112,Pedagogical Practice,methods of teaching mathematics 1,Methods of Teaching Mathematics 1
+MTH10112,Pedagogical Practice,methods of teaching mathematics 2.,Methods of Teaching Mathematics 2
+MTH10201,Elementary Financial Mathematics,calculus 1a,Calculus 1A
+MTH10201,Elementary Financial Mathematics,calculus 2a,Calculus 2A
+MTH10202,Forecasting,calculus 1a,Calculus 1A
+MTH10202,Forecasting,calculus 2a,Calculus 2A
+MTH10202,Forecasting,mathematical statistics,Mathematical Statistics
+MTH10203,Mathematical Finance Models,elementary financial mathematics,Elementary Financial Mathematics
+MTH10204,Financial and Monetary Theory,none,none
+MTH10209,Advanced Financial Mathematics,elementary financial mathematics,Elementary Financial Mathematics
+MTH10446,Operations Research,linear programming,Linear Programming
+MTH10449,Linear Programming,none,none
+MTH10447,Nonlinear Programming,none,none
+MTH10615,Optimization Models in Economics,none,none
+MTH10450,Optimization Algorithms,none,none
+MTH10543,Introduction to Convex Analysis and Convex Programming,none,none
+MTH10520,Mechanics Seminar,successfully completed 124/134 credits,successfully completed 124/134 credits
+MTH10611,Symbolic Programming for Applied Problems,linear algebra,Linear Algebra
+MTH10611,Symbolic Programming for Applied Problems,and programming.,Linear Programming
+MTH10103,Quality and Quality Management,none,none
+MTH10121,Elementary Algebra,none,none
+MTH10122,Elementary Geometry,none,none
+MTH10123,Application of Advanced Mathematical Methods in Solving Complex High School's Mathematics Problem,none,none
+MTH10124,Classroom Management and Organization,pedagogical psychology,Pedagogical Psychology
+MTH10125,Classroom Assessment Techniques,none,none
+MTH10126,Pedagogy Seminar,general education,General Education
+MTH10119,Teaching Mathematics in English 1,none,none
+MTH10120,Teaching Mathematics in English 2,none,none
+MTH10214,Quantitative Microeconomics,none,none
+MTH10217,Corporate finance,none,none
+MTH10219,Financial Analysis,none,none
+MTH10220,Basic Actuarial Mathematics,none,none
+MTH10221,Advanced Actuarial Mathematics,basic actuarial mathematics,Basic Actuarial Mathematics
+MTH10616,Seminar on Optimization,at least 6.5/10 at the time of registration.,at least 6.5/10 at the time of registration.
+MTH10616,Seminar on Optimization,graduatation with a major in optimization.,graduatation with a major in optimization.
+MTH10553,Multi-objective Optimization,none,none
+MTH10541,Game Theory,none,none
+MTH10545,Optimal Control,none,none
+MTH10595,Graduation Thesis,successfully completed 96/131 credits,successfully completed 96/131 credits
+MTH10549,Internship,none,none
+MTH10617,"Surveys of Mathematics, Computer Science, and Specializations",none,none
