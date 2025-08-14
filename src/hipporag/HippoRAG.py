@@ -21,7 +21,7 @@ from .llm import _get_llm_class, BaseLLM
 from .embedding_model import _get_embedding_model_class, BaseEmbeddingModel
 from .embedding_store import EmbeddingStore
 from .information_extraction import OpenIE
-from .information_extraction.openie_vllm_offline import VLLMOfflineOpenIE
+# from .information_extraction.openie_vllm_offline import VLLMOfflineOpenIE
 from .evaluation.retrieval_eval import RetrievalRecall
 from .evaluation.qa_eval import QAExactMatch, QAF1Score
 from .prompts.linking import get_query_instruction
@@ -397,7 +397,7 @@ class HippoRAG:
         -----
         - Long queries with no relevant facts after reranking will default to results from dense passage retrieval.
         """
-        retrieve_start_time = time.time()  # Record start time
+        retrieve_start_time = time.time() # Record start time
 
         if num_to_retrieve is None:
             num_to_retrieve = self.global_config.retrieval_top_k
@@ -434,7 +434,7 @@ class HippoRAG:
             top_k_docs = [self.chunk_embedding_store.get_row(self.passage_node_keys[idx])["content"] for idx in sorted_doc_ids[:num_to_retrieve]]
             retrieval_results.append(QuerySolution(question=query, docs=top_k_docs, doc_scores=sorted_doc_scores[:num_to_retrieve]))
 
-        retrieve_end_time = time.time()  # Record end time
+        retrieve_end_time = time.time() # Record end time
 
         self.all_retrieval_time += retrieve_end_time - retrieve_start_time
 

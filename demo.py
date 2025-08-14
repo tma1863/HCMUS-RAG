@@ -10,6 +10,7 @@ import shutil
 from src.hipporag.utils.eval_utils import normalize_answer
 
 from src.hipporag.StandardRAG import StandardRAG
+from src.hipporag.HippoRAG import HippoRAG
 from src.hipporag.utils.config_utils import BaseConfig
 
 from dotenv import load_dotenv
@@ -46,16 +47,16 @@ if __name__ == "__main__":
     output_dir = 'outputs'  # Define save directory for HippoRAG objects (each LLM/Embedding model combination will create a new subdirectory)    
     
     # for major in majors:
-    embedding_model_name = "GritLM/GritLM-7B"
+    embedding_model_name = "text-embedding-3-small"
     cache_dir = os.path.join(
         output_dir,
         f"demo_{embedding_model_name.split('/')[-1]}_standard_rag"
     )
     os.makedirs(cache_dir, exist_ok=True)
     docs = []
-    for major in ["MCS", "DS", "AM"]:
+    for major in ["DS"]:
         corpus_path = f"data/rag_qa_test/{major}/{major}_corpus.json"
-        with open(corpus_path, "r") as f:
+        with open(corpus_path, "r", encoding="utf-8") as f:
             corpus = json.load(f)
 
         tmp = [f"Course ID: {doc['title']}\n{doc['text']}" for doc in corpus]
