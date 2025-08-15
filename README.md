@@ -46,6 +46,9 @@ conda create -n hipporag python=3.10
 conda activate hipporag
 pip install hipporag
 pip install -r requirements.txt
+set OPENAI_API_KEY=<your openai api key>   # if you want to use OpenAI model
+python run demo.py # if you want to see the demonstration
+python run test_AM.py # Run the test AM script
 ```
 Initialize the environmental variables and activate the environment:
 
