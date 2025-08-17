@@ -1,0 +1,230 @@
+{
+    "retrieval": {
+        "Recall@1": 0.1778,
+        "Recall@2": 0.3778,
+        "Recall@5": 0.6222
+    },
+    "open_ended": {
+        "bleu": "18.44",
+        "meteor": "38.37",
+        "rougeL": "45.95"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.5145
+    },
+    "comparisons": [
+        {
+            "prediction": "marxistleninist philosophy basic contents of worldview and philosophical methodology application of knowledge creatively in cognitive and practical activities marxistleninist political economy basic and core knowledge of political economy systematic and scientific knowledge relevant to economic development analytical skills for assessing economic relations",
+            "reference": [
+                "expected learning outcomes concerning knowledge for marxistleninist philosophy basic contents of worldview and marxistleninist philosophical methodology basic general and systematic knowledge of problems of marxistleninist philosophy marxistleninist political economy basic and core knowledge of marxistleninist political economy"
+            ]
+        },
+        {
+            "prediction": "skillbased learning outcomes for general law include analyzing legal regulations looking up legal documents and working in groups for general economics outcomes include collecting information synthesizing issues comparing and analyzing microeconomic issues and developing reasoning and public speaking skills",
+            "reference": [
+                "skillbased learning outcomes for general law looking up legal documents analyzing legal regulations working in groups general economics capacity to collect information skills to synthesize and systematize issues in overall relationship skills to compare analyze comment and evaluate microeconomic issues reasoning and public speaking skills collaboration and teamwork skills creative thinking discovery and discovery assessment and selfassessment capacity"
+            ]
+        },
+        {
+            "prediction": "english 1 understanding vocabulary and grammar at preintermediate level comprehending 300500 word passages and knowledge of different cultures english 2 enhancing vocabulary and grammar knowledge comprehending 500700 word passages and knowledge of different cultures",
+            "reference": [
+                "knowledge outcomes for english 1 basic knowledge of general english of vocabulary and grammar in four skills listening speaking reading and writing vocabulary in various topics grammar structures at preintermediate level 300500 words passage of familiar topics knowledge of different cultures around world english 2 basic knowledge of general english of vocabulary and grammar in four skills listening speaking reading and writing vocabulary in various topics grammar structures in preintermediate level 500 700 words passage of familiar topics knowledge of different cultures around world"
+            ]
+        },
+        {
+            "prediction": "skills from psychology 1 analyzing synthesizing comparing and generalizing documents 2 identifying psychological phenomena and applying knowledge to solve problems 3 consulting skills 4 teamwork skills skills from groupworking and learning skills 1 teamwork 2 presentation 3 communication",
+            "reference": [
+                "skills students will acquire in psychology capacity to study documents analyze synthesize compare and generalize ability to identify psychological phenomena and apply learned knowledge to solve practical problems consulting and consulting skills communication and behavioral skills ability to think creatively independently and critically reasoning skills public speaking skills teamwork skills groupworking and learning skills teamwork presentation communication planning and execute projects learning skills"
+            ]
+        },
+        {
+            "prediction": "general chemistry 1 understanding atomic structure periodic changes in properties fundamental forces of interaction and their influence on matter general chemistry 2 knowledge of chemistry facts concepts vocabulary scientific method application and relationships to other disciplines general chemistry laboratory 1 describing chemical processes using lab equipment correctly and understanding chemist techniques",
+            "reference": [
+                "knowledge outcomes for general chemistry 1 theoretical foundations of chemistry basic models of atomic structure periodic changes in properties of chemical elements fundamental forces of interaction in matter general chemistry 2 facts concepts and vocabulary of chemistry general chemistry laboratory 1 chemical processes of experiments"
+            ]
+        },
+        {
+            "prediction": "scientific socialism basic contents of scientific socialism history of vietnamese communist party systematic knowledge about birth and leadership of communist party of vietnam",
+            "reference": [
+                "knowledgerelated learning outcomes for compulsory courses scientific socialism basic contents of scientific socialism history of vietnamese communist party systematic and basic knowledge about birth of communist party of vietnam 19201930 partys leadership over vietnamese revolution during period of political struggle government authority 19301945 in two resistance wars against french colonialism and american imperialism 19451975 in cause of national construction and defense during countrys transition to socialism association conducting renovation work 19752018"
+            ]
+        },
+        {
+            "prediction": "calculus 1a none specified calculus 2a perform calculation exercises on differentiable functions and their applications",
+            "reference": [
+                "skillbased learning outcomes for compulsory courses calculus 1a no specific skillbased learning outcomes are explicitly listed in source for this course calculus 2a calculation exercises on above concepts and their applications"
+            ]
+        },
+        {
+            "prediction": "general biology i outcomes include understanding fundamental biology concepts scientific processes chemical composition of living matter cell structure and function metabolism dna mechanisms biotechnology evolution and biodiversity general biology ii outcomes include knowledge of plant and animal morphology and function ecological relationships nutrient absorption and adaptation strategies",
+            "reference": [
+                "knowledge outcomes for elective courses offered in odd semester general biology i fundamental concepts of biology and scientific process chemical composition of living matter and chemical reaction related to biology structure and properties of water structure and function of large biology molecules structure and function of cells membranes and cellular organelles metabolism at cellular level including enzyme activity cellular respiration and photosynthesis dna structure and function including replication and repair transcription and translation mechanism of genetic cell division fertilization mutation and genetic variation biotechnology evolution and biodiversity concepts and mechanisms of origin of species general biology ii plant morphology functions and their ecological relationships nutrient absorption material transport in vascular plants and vital role of soils in providing nutrients plant life cycles reproductive systems and how plants respond to environmental cues for survival correlation between animal anatomy and physiology structure and functions of key systems including digestion circulation respiration immunity endocrinology reproduction and nervous system osmoregulation excretion processes and mechanisms underlying animal sensation and movement ecological factors and their impacts on organisms studying adaptation strategies ecosystem components structural dynamics functional processes material and energy cycling and equilibrium within ecosystems population dynamics community interactions and biosphere principles significance of biodiversity conservation for sustaining ecosystems locally in vietnam and globally"
+            ]
+        },
+        {
+            "prediction": "high performance computing skills in parallel programming and algorithms object oriented programming skills in objectoriented programming techniques and application development",
+            "reference": [
+                "general objectives regarding skills for high performance computing no specific general skill objectives are explicitly listed in source for this course object oriented programming no specific general skill objectives are explicitly listed in source for this course"
+            ]
+        },
+        {
+            "prediction": "equip students with knowledge base of multidimensional statistical system processing",
+            "reference": [
+                "knowledge objectives for multivariate statistics knowledge base of multidimensional statistical system processing analysis of statistical data comprehensive perspective on data processing in general and statistical data analysis in particular solid understanding of steps involved in statistical data processing cycle distinguish between different types of data and select appropriate approaches"
+            ]
+        },
+        {
+            "prediction": "main content for analysis 1a basics of real numbers sequences and series of real numbers prerequisites none no information available for analysis 2a and analysis 3a",
+            "reference": [
+                "main content and prerequisites for analysis 1a main content basics of real numbers sequences and series of real numbers prerequisites none analysis 2a main content basic topological concepts understand convergence in multidimensional spaces and function spaces metric spaces normative spaces and rn properties of continuous functions on metric spaces completeness of spaces and series on complete normed space prerequisites analysis 1a analysis 3a main content multiple integration and vector calculus prerequisites analysis 1a analysis 2a calculus 1a"
+            ]
+        },
+        {
+            "prediction": "data structures and algorithms course has no prerequisites and covers fundamental concepts related to data structures and algorithms object oriented programming course requires prior completion of data structures and algorithms and fundamentals of computer programming and it covers principles of objectoriented methodology building object classes data identification and manipulation inheritance polymorphism and programming in c",
+            "reference": [
+                "course content and prerequisites for data structures and algorithms course content introduction of algorithms analyzing algorithms and generalizing data search methods and arrangement in arrays basic dynamic data structure single and double linked lists binary search trees prerequisites fundamentals of computer programming object oriented programming course content principles of objectoriented methodology principles for building object classes data identification and manipulation establishing relations between classes especially inheritance relation and polymorphism design build classes definition operations and operations in c install specific relations between layers inheritance polymorphism in c prerequisites data structures and algorithms fundamentals of computer programming"
+            ]
+        },
+        {
+            "prediction": "general physics 1 covers topics such as kinematics dynamics statics work energy linear momentum gravitation and thermodynamics with no prerequisites general physics 2 covers electric and magnetic fields light optics and requires completion of calculus 1a and general physics 1 as prerequisites",
+            "reference": [
+                "topics covered and prerequisites for general physics 1 topics covered physics and measurement kinematics of particles force and newtons laws conservation laws in classical mechanics kinetics of rigid bodies ideal gas first law of thermodynamics second law of thermodynamics prerequisites none general physics 2 topics covered electric charge and electric field conductors in electric field electric current and magnetic field electromagnetic induction and applications background of light optics interference of light diffraction of light polarization of light prerequisites calculus 1a general physics 1"
+            ]
+        },
+        {
+            "prediction": "introduction to database systems mth10312 prerequisites none main content basic concepts of databases entityrelationship data model relational data model operations on relational data model sql language query relational database design standard forms and normalization algorithms nosql database database management system mth10344 prerequisites prior completion of introduction to database systems main content introduction to database management system sql and microsoft sql server fundamental sql syntaxes securing sql server stored and manage procedures creating and managing userdefined functions creating and managing triggers in sql server",
+            "reference": [
+                "main contents and prerequisites for introduction to database systems main contents basic concepts of databases entityrelationship data model relational data model operations on relational data model sql language query relational database design standard forms and normalization algorithms for databases nosql database prerequisites none database management system main contents definition functions properties architecture of database management system sql and microsoft sql server fundamental sql syntaxes securing sql server stored and manage procedures creating and managing userdefined functions creating and managing triggers in sql server prerequisites introduction to database systems"
+            ]
+        },
+        {
+            "prediction": "course content for introduction to artificial intelligence includes overview of ai state space and search problems knowledge demonstration machine learning introduction ontology and intelligent agents genetic algorithms fuzzy logic and neural networks there are no prerequisites for this course course content and prerequisites for introduction to machine learning are not provided in text",
+            "reference": [
+                "course content and prerequisites for introduction to artificial intelligence course content overview of science of ai state space and search problem knowledge demonstration introduction to machine learning and knowledge discovery introducing ontology and intelligent agent introduction to genetic algorithms ga introducing fuzzy logic neural network prerequisites data structures and algorithms discrete mathematics introduction to machine learning course content closed and open leontief model direct and indirect costs labor theory of value substitution theorem linear optimal model producible set efficient production production constraints consumption nonlinear optimization model modern theory of demand extended theory of production equilibrium in market economy budget constraints walraswald model arrowdebreumckenzie model equilibrium growth in dynamic economic model leontief model von neumann model equilibrium growth model prerequisites linear algebra mathematical statistics measure theory and probability"
+            ]
+        },
+        {
+            "prediction": "english 1 has no prerequisites english 2 follows english 1 english 3 requires english 2 english 4s relationship is unknown",
+            "reference": [
+                "prerequisite relationship between english 1 english 2 english 3 and english 4 is sequential english 1 has no prerequisites english 2 requires english 1 english 3 requires english 2 english 4 requires english 3"
+            ]
+        },
+        {
+            "prediction": "linear algebra is prerequisite for abstract algebra linear algebra and linear algebra practice are prerequisites for abstract algebra practice",
+            "reference": [
+                "prerequisite relationship among linear algebra abstract algebra and abstract algebra practice linear algebra has no prerequisites abstract algebra requires linear algebra abstract algebra practice requires linear algebra and linear algebra practice"
+            ]
+        },
+        {
+            "prediction": "fundamentals of computer programming has no prerequisites data structures and algorithms requires it object oriented programming requires both fundamentals of computer programming and data structures and algorithms",
+            "reference": [
+                "prerequisite connections for fundamentals of computer programming data structures and algorithms and object oriented programming fundamentals of computer programming has no prerequisites data structures and algorithms requires fundamentals of computer programming object oriented programming requires data structures and algorithms and fundamentals of computer programming"
+            ]
+        },
+        {
+            "prediction": "analysis 1a has no prerequisites analysis 2a requires analysis 1a analysis 3a requires analysis 2a",
+            "reference": [
+                "prerequisite chain for analysis 1a analysis 2a and analysis 3a analysis 1a has no prerequisites analysis 2a requires analysis 1a analysis 3a requires analysis 1a analysis 2a calculus 1a"
+            ]
+        },
+        {
+            "prediction": "introduction to database systems is prerequisite for both database management system and web programming with php",
+            "reference": [
+                "prerequisite relationship between introduction to database systems database management system and web programming with php introduction to database systems has no prerequisites database management system requires introduction to database systems web programming with php requires introduction to database systems"
+            ]
+        },
+        {
+            "prediction": "general economics is elective course offered in even semester general law and psychology are not mentioned in text",
+            "reference": [
+                "course types and semesters for general law compulsory odd semester general economics elective even semester psychology elective even semester"
+            ]
+        },
+        {
+            "prediction": "analysis 1a compulsory odd semester calculus 1a compulsory odd semester analysis 2a not specified calculus 2a not specified",
+            "reference": [
+                "category and semester for analysis 1a compulsory odd semester calculus 1a compulsory odd semester analysis 2a compulsory odd semester calculus 2a compulsory even semester"
+            ]
+        },
+        {
+            "prediction": "general chemistry 1 elective odd semester general chemistry 2 elective odd semester general chemistry laboratory 1 elective odd semester",
+            "reference": [
+                "course types and semesters for general chemistry 1 elective odd semester general chemistry 2 elective odd semester general chemistry laboratory 1 elective odd semester"
+            ]
+        },
+        {
+            "prediction": "computer networks compulsory even semester system and network administration compulsory even semester unix operating system compulsory odd semester",
+            "reference": [
+                "course types and semesters offered for computer networks compulsory even semester system and network administration compulsory even semester unix operating system compulsory odd semester"
+            ]
+        },
+        {
+            "prediction": "python for data science compulsory odd semester data mining compulsory even semester data visualization elective odd semester",
+            "reference": [
+                "course type and semester for python for data science compulsory odd semester data mining compulsory even semester data visualization elective odd semester"
+            ]
+        },
+        {
+            "prediction": "marxistleninist philosophy marxistleninist political economy",
+            "reference": [
+                "compulsory courses offered in odd semester that have no prerequisites among given options are marxistleninist philosophy marxistleninist political economy general law english 1"
+            ]
+        },
+        {
+            "prediction": "human and environment env00003",
+            "reference": [
+                "elective course available in even semester that requires general biology i as prerequisite from options is human and environment"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "compulsory course offered in even semester that requires object oriented programming as prerequisite is analysis and design of information systems"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "compulsory course offered in even semester that requires both analysis 1a and measure theory and probability as prerequisites from given options is mathematical statistics"
+            ]
+        },
+        {
+            "prediction": "ong thanh hai for analysis 1a no information for analysis 2a and analysis 3a",
+            "reference": [
+                "instructors for analysis 1a ong thanh hai analysis 2a ong thanh hai analysis 3a ly kim ha"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "9",
+        "6",
+        "8",
+        "9",
+        "9",
+        "8",
+        "5",
+        "9",
+        "8",
+        "5",
+        "8",
+        "8",
+        "9",
+        "8",
+        "7",
+        "8",
+        "8",
+        "7",
+        "8",
+        "9",
+        "6",
+        "9",
+        "8",
+        "8",
+        "8",
+        "9",
+        "7",
+        "5",
+        "6",
+        "6"
+    ]
+}

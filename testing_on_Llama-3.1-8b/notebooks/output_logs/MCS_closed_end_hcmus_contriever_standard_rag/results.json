@@ -1,0 +1,370 @@
+{
+    "retrieval": {
+        "Recall@1": 0.38,
+        "Recall@2": 0.46,
+        "Recall@5": 0.68
+    },
+    "open_ended": {
+        "bleu": "0.00",
+        "meteor": "54.93",
+        "rougeL": "77.64"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.74,
+        "F1": 0.7724
+    },
+    "comparisons": [
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "compulsory",
+            "reference": [
+                "compulsory category"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "even semester",
+            "reference": [
+                "even semester"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "elective"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "4",
+            "reference": [
+                "4"
+            ]
+        },
+        {
+            "prediction": "no information available",
+            "reference": [
+                "english 1"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "english 2"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "ong thanh hai",
+            "reference": [
+                "ong thanh hai"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "none provided",
+            "reference": [
+                "analysis 1a"
+            ]
+        },
+        {
+            "prediction": "calculus 1a",
+            "reference": [
+                "calculus 1a"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "even semester",
+            "reference": [
+                "even semester"
+            ]
+        },
+        {
+            "prediction": "maple software",
+            "reference": [
+                "maple software"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "c language",
+            "reference": [
+                "c programming language"
+            ]
+        },
+        {
+            "prediction": "pham nhan",
+            "reference": [
+                "pham nhan"
+            ]
+        },
+        {
+            "prediction": "matlab",
+            "reference": [
+                "matlab"
+            ]
+        },
+        {
+            "prediction": "gap",
+            "reference": [
+                "gap"
+            ]
+        },
+        {
+            "prediction": "5",
+            "reference": [
+                "6"
+            ]
+        },
+        {
+            "prediction": "general biology i",
+            "reference": [
+                "general biology i"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "general chemistry 1",
+            "reference": [
+                "general chemistry 1"
+            ]
+        },
+        {
+            "prediction": "general chemistry 2",
+            "reference": [
+                "general chemistry 2"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "not available",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "r or spss",
+            "reference": [
+                "r or spss"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "not mentioned",
+            "reference": [
+                "le van hop"
+            ]
+        },
+        {
+            "prediction": "c",
+            "reference": [
+                "c"
+            ]
+        },
+        {
+            "prediction": "radonnikodym theorem",
+            "reference": [
+                "radonnikodym theorem"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "euclidean spaces lp spaces lp spaces bounded function spaces hilbert space",
+            "reference": [
+                "infinitedimensional spaces"
+            ]
+        },
+        {
+            "prediction": "nguyen hien luong",
+            "reference": [
+                "nguyen hien luong"
+            ]
+        },
+        {
+            "prediction": "nguyen thanh binh",
+            "reference": [
+                "nguyen thanh binh"
+            ]
+        },
+        {
+            "prediction": "unknown",
+            "reference": [
+                "compulsory"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "10",
+        "10",
+        "8",
+        "10",
+        "9",
+        "10",
+        "8",
+        "10",
+        "10",
+        "10",
+        "1",
+        "5",
+        "10",
+        "10",
+        "10",
+        "1",
+        "9",
+        "10",
+        "10",
+        "10",
+        "10",
+        "6",
+        "7",
+        "10",
+        "10",
+        "8",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "9",
+        "10",
+        "10",
+        "9",
+        "10",
+        "10",
+        "6",
+        "5",
+        "1",
+        "10",
+        "9",
+        "7",
+        "10",
+        "9",
+        "10",
+        "7",
+        "9",
+        "10",
+        "1"
+    ]
+}

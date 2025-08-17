@@ -1,0 +1,384 @@
+{
+    "retrieval": {
+        "Recall@1": 0.4231,
+        "Recall@2": 0.4615,
+        "Recall@5": 0.5962
+    },
+    "open_ended": {
+        "bleu": "27.41",
+        "meteor": "49.43",
+        "rougeL": "78.21"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.75,
+        "F1": 0.7756
+    },
+    "comparisons": [
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "6 chapters",
+            "reference": [
+                "6"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "even semester",
+            "reference": [
+                "even semester"
+            ]
+        },
+        {
+            "prediction": "compulsory",
+            "reference": [
+                "compulsory"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "even semester",
+            "reference": [
+                "even semester"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "le nhan my"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "elective"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "tran huong thao",
+            "reference": [
+                "tran huong thao"
+            ]
+        },
+        {
+            "prediction": "tran huong thao",
+            "reference": [
+                "tran huong thao"
+            ]
+        },
+        {
+            "prediction": "elective",
+            "reference": [
+                "elective"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "4",
+            "reference": [
+                "4"
+            ]
+        },
+        {
+            "prediction": "4",
+            "reference": [
+                "english 2"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "english 1"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "none as course does not exist in provided text",
+            "reference": [
+                "english 2"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "compulsory"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "english 3"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "nguyen vu huy",
+            "reference": [
+                "nguyen vu huy"
+            ]
+        },
+        {
+            "prediction": "text does not specify who teaches analysis 2a",
+            "reference": [
+                "ong thanh hai"
+            ]
+        },
+        {
+            "prediction": "not specified",
+            "reference": [
+                "analysis 1a"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "nguyen thi hoai thuong phan thi my duyen",
+            "reference": [
+                "nguyen thi hoai thuong"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "maple software",
+            "reference": [
+                "maple software"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "linear algebra",
+            "reference": [
+                "linear algebra"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "pham nhan",
+            "reference": [
+                "pham nhan"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "ong thanh hai",
+            "reference": [
+                "ong thanh hai"
+            ]
+        },
+        {
+            "prediction": "matlab",
+            "reference": [
+                "matlab"
+            ]
+        },
+        {
+            "prediction": "nguyen kim ngoc",
+            "reference": [
+                "nguyen kim ngoc"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "10",
+        "10",
+        "10",
+        "8",
+        "9",
+        "10",
+        "10",
+        "10",
+        "10",
+        "9",
+        "10",
+        "10",
+        "10",
+        "7",
+        "7",
+        "8",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "9",
+        "5",
+        "10",
+        "5",
+        "7",
+        "5",
+        "10",
+        "10",
+        "10",
+        "9",
+        "9",
+        "1",
+        "4",
+        "10",
+        "5",
+        "4",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "9",
+        "10",
+        "10",
+        "9",
+        "10",
+        "10",
+        "9",
+        "8"
+    ]
+}

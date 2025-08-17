@@ -1,0 +1,384 @@
+{
+    "retrieval": {
+        "Recall@1": 0.3846,
+        "Recall@2": 0.4808,
+        "Recall@5": 0.5577
+    },
+    "open_ended": {
+        "bleu": "25.47",
+        "meteor": "33.66",
+        "rougeL": "42.76"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.4306
+    },
+    "comparisons": [
+        {
+            "prediction": "gap",
+            "reference": [
+                "software such as gap is used"
+            ]
+        },
+        {
+            "prediction": "lecturers at faculty of environment university of science vnuhcm",
+            "reference": [
+                "general environment is taught by lecturers at faculty of environment university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "elective",
+            "reference": [
+                "general environment is elective subject"
+            ]
+        },
+        {
+            "prediction": "le cong man",
+            "reference": [
+                "human and environment is taught by le cong man faculty of biology and biotechnology university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "general biology i",
+            "reference": [
+                "it requires prior completion of general biology i"
+            ]
+        },
+        {
+            "prediction": "lecturers at faculty of geology university of science vnuhcm",
+            "reference": [
+                "earth science is taught by lecturers at faculty of geology university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "composition and structure of atmosphere wind weather climate climate change",
+            "reference": [
+                "topics related to atmosphere include composition and structure of atmosphere wind and weather climate climate change"
+            ]
+        },
+        {
+            "prediction": "elective course none",
+            "reference": [
+                "general chemistry 1 is elective course and has no prerequisites"
+            ]
+        },
+        {
+            "prediction": "focus of general chemistry 1 learning outcomes is to provide foundational knowledge of atomic structure periodic properties chemical bonds and relationship between forces and physical properties of matter",
+            "reference": [
+                "subject deals with theoretical foundations of chemistry related to basic models of atomic structure periodic changes in properties of chemical elements fundamental forces of interaction in matter"
+            ]
+        },
+        {
+            "prediction": "general chemical equilibria acid and base equilibria ionic compound solubility and equilibria",
+            "reference": [
+                "course includes general chemical equilibria acid and base equilibria ph buffers ionic compound solubility and equilibria electrochemistry"
+            ]
+        },
+        {
+            "prediction": "lecturers at faculty of chemistry university of science vnuhcm",
+            "reference": [
+                "general chemistry laboratory 1 is taught by lecturers at faculty of chemistry university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "work in lab safely scientifically",
+            "reference": [
+                "last skill expected is to use equipment in chemistry lab correctly"
+            ]
+        },
+        {
+            "prediction": "lecturers at faculty of chemistry university of science vnuhcm",
+            "reference": [
+                "general chemistry laboratory 2 is taught by lecturers at faculty of chemistry university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes general chemistry laboratory 2 content concepts covered include determination of concentration by titration"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "general biology i is offered in odd semester"
+            ]
+        },
+        {
+            "prediction": "enzyme activity cellular respiration and photosynthesis",
+            "reference": [
+                "metabolism at cellular level including enzyme activity cellular respiration and photosynthesis are described"
+            ]
+        },
+        {
+            "prediction": "lecturers at faculty of biology and biotechnology university of science vnuhcm",
+            "reference": [
+                "general biology ii is instructed by lecturers at faculty of biology and biotechnology university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "general biology i",
+            "reference": [
+                "it requires prior completion of general biology i"
+            ]
+        },
+        {
+            "prediction": "luong thi my ngan",
+            "reference": [
+                "luong thi my ngan faculty of biology and biotechnology university of science vnuhcm is instructor of labwork on general biology i"
+            ]
+        },
+        {
+            "prediction": "use microscope proficiently",
+            "reference": [
+                "lab skill taught is how to use microscope proficiently"
+            ]
+        },
+        {
+            "prediction": "phan ngo hoang",
+            "reference": [
+                "phan ngo hoang faculty of biology and biotechnology university of science vnuhcm is instructor of labwork on general biology ii"
+            ]
+        },
+        {
+            "prediction": "demonstrate environmental impacts on photosynthesis",
+            "reference": [
+                "practical activity included is to demonstrate environmental impacts on photosynthesis"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "chau van tao faculty of physics and engineering physics university of science vnuhcm is instructor of general physics 1"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "there are no prerequisites for this course"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "general physics 2 is available in odd semester"
+            ]
+        },
+        {
+            "prediction": "calculus 1a general physics 1",
+            "reference": [
+                "prerequisites are calculus 1a general physics 1"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "labwork on general physics is available in odd semester"
+            ]
+        },
+        {
+            "prediction": "practical",
+            "reference": [
+                "labwork on general physics is practical subject in laboratory"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "lecturers at centre of informatics university of science vnuhcm is instructor of introduction to informatics"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "course covers windows operating system"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "measure theory and probability is conducted in odd semester"
+            ]
+        },
+        {
+            "prediction": "analysis 1a",
+            "reference": [
+                "it requires prior completion of analysis 1a"
+            ]
+        },
+        {
+            "prediction": "ta thi nguyet nga",
+            "reference": [
+                "algebra a2 is taught by tran ngoc hoi"
+            ]
+        },
+        {
+            "prediction": "no prerequisites",
+            "reference": [
+                "algebra a2 requires linear algebra as its prerequisite"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "functional analysis is taught by bui le trong thanh"
+            ]
+        },
+        {
+            "prediction": "none provided",
+            "reference": [
+                "prerequisites are analysis 1a analysis 2a analysis 3a"
+            ]
+        },
+        {
+            "prediction": "hoang van ha",
+            "reference": [
+                "mathematical statistics is taught by hoang van ha"
+            ]
+        },
+        {
+            "prediction": "no specific software is mentioned",
+            "reference": [
+                "students can apply statistical techniques using r or spss"
+            ]
+        },
+        {
+            "prediction": "matlab",
+            "reference": [
+                "matlab program is used to simulate"
+            ]
+        },
+        {
+            "prediction": "to introduce basic concepts and approximation methods of numerical analysis and to provide students with tools to find approximate solutions to problems involving equations and systems of equations",
+            "reference": [
+                "general objective is to introduce basic concepts and approximation methods of numerical analysis and to provide students with tools to find approximate solutions to problems involving equations and systems of equations"
+            ]
+        },
+        {
+            "prediction": "content includes linear ordinary differential equations of second order wave equations heat equations and laplace equations",
+            "reference": [
+                "equations of mathematical physics content contains linear ordinary differential equations of second order wave equations heat equations laplace equations"
+            ]
+        },
+        {
+            "prediction": "linear ordinary differential equations of second order wave equations heat equations laplace equations",
+            "reference": [
+                "course covers wave equations heat equations laplace equations"
+            ]
+        },
+        {
+            "prediction": "vectors mechanics of particles mechanics of particle systems mechanics of connected systems",
+            "reference": [
+                "theoretical mechanics topics contain vectors mechanics of particles mechanics of particle systems mechanics of connected systems"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes knowledge outcome is newtons laws and their consequences"
+            ]
+        },
+        {
+            "prediction": "analysis of stress deformation and strain motion and flow fundamental laws of continuum mechanics linear elasticity fluids",
+            "reference": [
+                "continuum mechanics content provides foundation knowledge for modules of deformed solid mechanics fluid mechanics fracture mechanics composite materials and mechanics seminar"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes this course introduces and provides foundation knowledge for modules of deformed solid mechanics"
+            ]
+        },
+        {
+            "prediction": "master concepts and procedures in finite element method",
+            "reference": [
+                "finite element method learning outcomes knowledge contains master concepts and procedures in finite element method"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes skills include knowing how to apply finite element method to numerically solve boundary problems boundaryfirst value problems from finite element discretization to matlab programming"
+            ]
+        },
+        {
+            "prediction": "basis properties of complex numbers and complex functions analytic functions power expansion line integral and theory of residues",
+            "reference": [
+                "complex variable functions content provides basis properties of complex numbers and complex functions analytic functions power expansion line integral and theory of residues"
+            ]
+        },
+        {
+            "prediction": "analysis 1a analysis 2a analysis 3a analysis 4a",
+            "reference": [
+                "prerequisites are analysis 1a analysis 2a analysis 3a analysis 4a"
+            ]
+        },
+        {
+            "prediction": "students will understand basic concepts of laws of behavior of solid bodies and develop methods of modeling solving problems and numerical simulation by computers",
+            "reference": [
+                "students will understand basic concepts of laws of behavior of solid bodies students develop methods of modeling solving problems and numerical simulation by computers"
+            ]
+        },
+        {
+            "prediction": "continuum mechanics",
+            "reference": [
+                "it requires prior completion of continuum mechanics"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "8",
+        "8",
+        "9",
+        "2",
+        "4",
+        "8",
+        "9",
+        "3",
+        "8",
+        "8",
+        "8",
+        "8",
+        "9",
+        "8",
+        "7",
+        "8",
+        "7",
+        "8",
+        "1",
+        "6",
+        "7",
+        "9",
+        "2",
+        "7",
+        "8",
+        "7",
+        "9",
+        "10",
+        "4",
+        "8",
+        "8",
+        "9",
+        "3",
+        "6",
+        "1. 3",
+        "5",
+        "5",
+        "4",
+        "8",
+        "8",
+        "9",
+        "8",
+        "9",
+        "8",
+        "7",
+        "8",
+        "8",
+        "8",
+        "9",
+        "8",
+        "8",
+        "8"
+    ]
+}

@@ -1,0 +1,370 @@
+{
+    "retrieval": {
+        "Recall@1": 0.8,
+        "Recall@2": 0.88,
+        "Recall@5": 0.92
+    },
+    "open_ended": {
+        "bleu": "44.20",
+        "meteor": "44.58",
+        "rougeL": "53.16"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.5383
+    },
+    "comparisons": [
+        {
+            "prediction": "r statistical software",
+            "reference": [
+                "course equips students with necessary tools for data processing using r statistical software"
+            ]
+        },
+        {
+            "prediction": "regression classification clustering and association rule mining",
+            "reference": [
+                "common data mining tasks explained are regression classification clustering and association rule mining"
+            ]
+        },
+        {
+            "prediction": "to present basic knowledge of python programming for data science for multidimensional signal data processing in data classification or object recognition data mining data analysis statistics machine learning etc",
+            "reference": [
+                "general objective is to present basic knowledge of python programming for data science for multidimensional signal data processing"
+            ]
+        },
+        {
+            "prediction": "noise filtering methods edge highlighting morphological operations wavelets image segmentation finding edges and polygons image compression basic watermarking techniques",
+            "reference": [
+                "methods such as noise filtering methods edge highlighting morphological operations wavelets image segmentation find edges and polygons are presented"
+            ]
+        },
+        {
+            "prediction": "md5 sha1",
+            "reference": [
+                "common cryptographic hash functions mentioned are md5 sha1"
+            ]
+        },
+        {
+            "prediction": "fourier and wavelet frequency representations",
+            "reference": [
+                "classical fourier and modern wavelet frequency representations are introduced"
+            ]
+        },
+        {
+            "prediction": "fundamental definition parallelism methods message passing interface parallel programming schemes parallel algorithm",
+            "reference": [
+                "topics include fundamental definition parallelism methods message passing interface parallel programming schemes parallel algorithm"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "euclidean divison algorithm is applied"
+            ]
+        },
+        {
+            "prediction": "none specified",
+            "reference": [
+                "ides are used"
+            ]
+        },
+        {
+            "prediction": "unixlinux server environments",
+            "reference": [
+                "students will install and configure network services on unixlinux server environments"
+            ]
+        },
+        {
+            "prediction": "c",
+            "reference": [
+                "c is used"
+            ]
+        },
+        {
+            "prediction": "web file transfer email domain name firewall",
+            "reference": [
+                "students will learn to use popular services like web file transfer email domain name firewall"
+            ]
+        },
+        {
+            "prediction": "network system administration or software programming for embedded systems",
+            "reference": [
+                "course will orient students to pursue career in network system administration or software programming for embedded systems"
+            ]
+        },
+        {
+            "prediction": "gantt and pert charts",
+            "reference": [
+                "gantt pert chart are mentioned"
+            ]
+        },
+        {
+            "prediction": "passage does not specify particular classical analysis method",
+            "reference": [
+                "structured analysis sa is introduced"
+            ]
+        },
+        {
+            "prediction": "j2ee technology",
+            "reference": [
+                "students can learn more about j2ee technology"
+            ]
+        },
+        {
+            "prediction": "principal component analysis methods discrete analysis independent component analysis nonnegative matrices and some multiplication methods",
+            "reference": [
+                "mathematical ideas of principal component analysis methods discrete analysis independent component analysis nonnegative matrices and some multiplication methods are presented"
+            ]
+        },
+        {
+            "prediction": "algorithms",
+            "reference": [
+                "students will learn to evaluate complexity of algorithms"
+            ]
+        },
+        {
+            "prediction": "sql server",
+            "reference": [
+                "focus is on sql server database management system"
+            ]
+        },
+        {
+            "prediction": "depth first",
+            "reference": [
+                "depth first is discussed"
+            ]
+        },
+        {
+            "prediction": "their graduation thesis",
+            "reference": [
+                "it helps students prepare to write graduation thesis"
+            ]
+        },
+        {
+            "prediction": "power bi",
+            "reference": [
+                "students will develop proficiency in using power bi"
+            ]
+        },
+        {
+            "prediction": "present numerical methods for processing multidimensional signal data in data classification or object recognition data mining data analysis statistics machine learning etc",
+            "reference": [
+                "general objective is to present numerical methods for processing multidimensional signal data"
+            ]
+        },
+        {
+            "prediction": "multidimensional data processing techniques classification algorithms and regression",
+            "reference": [
+                "examples are from many applications multidimensional data processing techniques classification and regression algorithms"
+            ]
+        },
+        {
+            "prediction": "attend all classroom sessions and discussions outside of class time",
+            "reference": [
+                "attitude expected is attend all classroom sessions and discussions outside of class time"
+            ]
+        },
+        {
+            "prediction": "selenium",
+            "reference": [
+                "selenium is used for automated testing of web applications"
+            ]
+        },
+        {
+            "prediction": "text does not specify fundamental computing units in modern world of computing for this course",
+            "reference": [
+                "mobile devices eg smartphones netbooks tablets and similar are defined as fundamental computing units"
+            ]
+        },
+        {
+            "prediction": "equipping students with basic knowledge to prepare for graduation thesis",
+            "reference": [
+                "general objective is equipping students with basic knowledge to prepare for graduation thesis"
+            ]
+        },
+        {
+            "prediction": "visual effects or film effects",
+            "reference": [
+                "popular image transformations are used in visual effects or film effects"
+            ]
+        },
+        {
+            "prediction": "basic html",
+            "reference": [
+                "basic html is included"
+            ]
+        },
+        {
+            "prediction": "php",
+            "reference": [
+                "php technology is used"
+            ]
+        },
+        {
+            "prediction": "students and graduate students interested in pattern recognition artificial neural networks svm and computer vision",
+            "reference": [
+                "students and graduate students interested in pattern recognition artificial neural networks svm support vector machine and computer vision can join"
+            ]
+        },
+        {
+            "prediction": "selfstudy group discussion writing reportspresentations arguingjustifyingdefending opinions finding and using resources related to references",
+            "reference": [
+                "skills such as selfstudy group discussion writing reportspresentations arguingjustifyingdefending opinions how to find and use resources related references are prepared"
+            ]
+        },
+        {
+            "prediction": "servlet jsp cookie session mvc framework jdbc el",
+            "reference": [
+                "servlet jsp are used to build web applications"
+            ]
+        },
+        {
+            "prediction": "syntactic and semantic analysis",
+            "reference": [
+                "syntactic and semantic analysis is included"
+            ]
+        },
+        {
+            "prediction": "constrained and unconstrained optimization problems",
+            "reference": [
+                "students will solve constrained and unconstrained optimization problems"
+            ]
+        },
+        {
+            "prediction": "r and python",
+            "reference": [
+                "r or python programming are used"
+            ]
+        },
+        {
+            "prediction": "96 credits",
+            "reference": [
+                "students must successfully complete 96131 credits"
+            ]
+        },
+        {
+            "prediction": "100 attendance is required",
+            "reference": [
+                "attendance should be 100"
+            ]
+        },
+        {
+            "prediction": "it helps students orient themselves and make informed decisions when selecting their major",
+            "reference": [
+                "this foundation helps students orient themselves and make informed decisions when selecting their major"
+            ]
+        },
+        {
+            "prediction": "assigned lecturers of faculty of mathematics and computer science university of science vnuhcm",
+            "reference": [
+                "it is instructed by assigned lecturers of faculty of mathematics and computer science university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "odd semester",
+            "reference": [
+                "it is scheduled for odd semester"
+            ]
+        },
+        {
+            "prediction": "6 chapters",
+            "reference": [
+                "program consists of six chapters"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes it is one of three components constituting marxismleninism"
+            ]
+        },
+        {
+            "prediction": "lecturers at school of political and administration sciences vnuhcm",
+            "reference": [
+                "history of vietnamese communist party is taught by lecturers at school of political and administration sciences vnuhcm"
+            ]
+        },
+        {
+            "prediction": "students will be equipped with knowledge about concept origin process of formation and development of ho chi minh thought and its application in nationaldemocratic and socialist revolutions",
+            "reference": [
+                "students will be equipped with basic knowledge about concept origin process of formation and development of ho chi minh thought"
+            ]
+        },
+        {
+            "prediction": "understand basic legal concepts and terms related to countrys legal system and state apparatus apply legal provisions to solve some simple case studies help students form and develop skills such as looking up legal documents analyzing legal regulations and working in groups",
+            "reference": [
+                "general objective is to understand basic legal concepts and terms related to countrys legal system and state apparatus"
+            ]
+        },
+        {
+            "prediction": "le nhan my",
+            "reference": [
+                "instructor is le nhan my"
+            ]
+        },
+        {
+            "prediction": "analyze synthesize compare and generalize",
+            "reference": [
+                "students will develop capacity to study documents analyze synthesize compare and generalize"
+            ]
+        },
+        {
+            "prediction": "serious diligent positive",
+            "reference": [
+                "expected attitude and diligence is serious diligent positive"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "8",
+        "8",
+        "8",
+        "9",
+        "9",
+        "8",
+        "9",
+        "2",
+        "5",
+        "9",
+        "9",
+        "6",
+        "8",
+        "9",
+        "5",
+        "7",
+        "8",
+        "6",
+        "5",
+        "8",
+        "8",
+        "8",
+        "9",
+        "7",
+        "9",
+        "8",
+        "1",
+        "7",
+        "8",
+        "9",
+        "9",
+        "8",
+        "9",
+        "9",
+        "9",
+        "9",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "7",
+        "8",
+        "8",
+        "7",
+        "8",
+        "8",
+        "5",
+        "8",
+        "8"
+    ]
+}

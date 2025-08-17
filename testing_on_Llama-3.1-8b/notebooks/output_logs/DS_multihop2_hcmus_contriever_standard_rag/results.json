@@ -1,0 +1,230 @@
+{
+    "retrieval": {
+        "Recall@1": 0.2167,
+        "Recall@2": 0.3528,
+        "Recall@5": 0.6028
+    },
+    "open_ended": {
+        "bleu": "11.95",
+        "meteor": "41.53",
+        "rougeL": "44.07"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.5009
+    },
+    "comparisons": [
+        {
+            "prediction": "in marxistleninist philosophy students learn worldview and philosophical methodology of marxismleninism in marxistleninist political economy they gain core knowledge of political economy related to economic development",
+            "reference": [
+                "philosophical methodology marxistleninist philosophical methodology reasonable research and learning methods core knowledge basic contents of worldview basic general and systematic knowledge of problems of marxistleninist philosophy knowledge about worldview basic and core knowledge of marxistleninist political economy basic systematic scientific updating new knowledge"
+            ]
+        },
+        {
+            "prediction": "skills related to information collection synthesis and critical evaluation developed in general economics include ability to compare analyze comment and evaluate microeconomic issues along with reasoning and public speaking skills psychology course likely develops similar skills focusing on psychological concepts",
+            "reference": [
+                "skills capacity to collect information skills to synthesize and systematize issues in overall relationship skills to compare analyze comment and evaluate microeconomic issues capacity to study documents analyze synthesize compare and generalize ability to identify psychological phenomena apply learned knowledge to solve practical problems"
+            ]
+        },
+        {
+            "prediction": "students gain scientific thinking methods skills in choosing research materials and ability to apply historical awareness to practical work from history of vietnamese communist party from hochiminh\u2019s ideology they develop critical analysis and creative problemsolving skills",
+            "reference": [
+                "abilities scientific thinking methods on history skills in choosing research materials ability to apply historical awareness to practical work think analyze evaluate and creatively apply ho chi minhs thoughts to solve problems in real life study and work"
+            ]
+        },
+        {
+            "prediction": "specific skills cultivated in groupworking and learning skills are teamwork presentation and communication in general law skills include analyzing legal regulations looking up legal documents and working in groups",
+            "reference": [
+                "skills teamwork presentation communication looking up legal documents analyzing legal regulations working in groups"
+            ]
+        },
+        {
+            "prediction": "fundamental concepts of biology chemical composition of living matter cellular structures and functions and plant and animal biology",
+            "reference": [
+                "knowledge outcomes fundamental concepts of biology scientific process chemical composition of living matter chemical reaction related to biology structure and properties of water structure and function of large biology molecules structure and function of cells membranes and cellular organelles metabolism at cellular level enzyme activity cellular respiration and photosynthesis dna structure and function replication and repair transcription and translation mechanism of genetic cell division fertilization mutation and genetic variation biotechnology evolution and biodiversity concepts and mechanisms of origin of species plant morphology functions ecological relationships nutrient absorption material transport in vascular plants vital role of soils in providing nutrients plant life cycles reproductive systems how plants respond to environmental cues for survival correlation between animal anatomy and physiology structure and functions of key systems including digestion circulation respiration immunity endocrinology reproduction and nervous system osmoregulation excretion processes mechanisms underlying animal sensation and movement ecological factors and their impacts on organisms adaptation strategies ecosystem components structural dynamics functional processes material and energy cycling equilibrium within ecosystems population dynamics community interactions biosphere principles significance of biodiversity conservation for sustaining ecosystems"
+            ]
+        },
+        {
+            "prediction": "knowledge outcomes related to marxismleninism include understanding worldview and methodology of marxismleninism knowledge of marxistleninist political economy and familiarity with scientific socialism",
+            "reference": [
+                "knowledge outcomes basic contents of worldview marxistleninist philosophical methodology basic general and systematic knowledge of problems of marxistleninist philosophy basic and core knowledge of marxistleninist political economy thinking and analytical skills assessing and identifying nature of economic benefit relations basic contents of scientific socialism"
+            ]
+        },
+        {
+            "prediction": "history of vietnamese communist party emphasizes scientific thinking methods research material selection and applying historical awareness introduction to informatics does not emphasize these skills",
+            "reference": [
+                "skills scientific thinking methods on history skills in choosing research materials ability to apply historical awareness to practical work create documents with professional format structure and presentation using software analyze and organize data in spreadsheet format use calculation search and statistical functions to create formulas for data processing and presentation create eyecatching presentations"
+            ]
+        },
+        {
+            "prediction": "students acquire knowledge about environmental concepts human impact on environment climate change and sustainable development from general environment while earth science provides insights into earths structure natural resources and effects of human activities on geological processes",
+            "reference": [
+                "knowledge basic knowledge of environmental science concepts classification of resources environment basic problems and core of environment measures to protect environment conserve resources towards goal of sustainable development overview of environment general concepts of environment basic composition of environment volumes natural resources definition classification general issues of natural disaster human impact on environment history of human impact on environment human impact on environmental components environmental issues and sustainable development population and environment environmental pollution climate change sustainable development environmental management and environmental education general knowledge about earth related to rights of earth inside and outside earth position and operation of earth in space composition and structure of atmosphere wind and weather climate climate change distribution of freshwater in hydrosphere sea and ocean behaviour el ninola nina phenomena geosphere composition and structure of earths crust weathering erosionaccumulation landslides internal structure of earth earthquakes volcanoes plate tectonic activities history of earth through record of fossil remains"
+            ]
+        },
+        {
+            "prediction": "learners enhance vocabulary in everyday items life events health hobbies and finance and grammar structures from basic tenses to conditional sentences and passive voice",
+            "reference": [
+                "vocabulary vocabulary in various topics such as everyday items important life events holiday plans health problems hobbies and interests personalities finance related issues vocabulary in various topics such as leisure activities important life events emotion attitude physical appearance description travel plans dreams countries people and languages intermediate knowledge of general english of vocabulary vocabulary in wide range of topics namely everyday items important life events holiday plans health problems hobbies and interests personalities and financerelated issues grammar structures grammar structures in preintermediate level such as basic tenses and more complex grammatical structures including conditional sentences passive and verb patterns new language in natural communicative way intermediate knowledge of general english of grammar language needed in more complex reallife situations"
+            ]
+        },
+        {
+            "prediction": "calculus 1b covers differentiation and integration of singlevariable functions while calculus 2b covers differentiation and integration of multivariable functions including partial derivatives and multiple integrals",
+            "reference": [
+                "knowledge differentiation and integral of functions of one variable infinite sequences and series derivatives and integrals differentiation and integral of multivariable functions ordinary differential equations partial derivatives and multiple integrals with their applications models with ordinary differential equations"
+            ]
+        },
+        {
+            "prediction": "calculus 1b id mth00003 has no prerequisites and covers functions and limits derivatives applications of differentiation integrals and applications of integration series calculus 2b id mth00004 requires completion of calculus 1b and includes partial derivatives multiple integrals vector calculus differential equations",
+            "reference": [
+                "calculus 1b content areas functions and limits derivatives applications of differentiation integrals and applications of integration series prerequisites none calculus 2b content areas partial derivatives multiple integrals vector calculus differential equations prerequisites calculus 1b"
+            ]
+        },
+        {
+            "prediction": "prerequisites for probability and statistics calculus 1b main topics basic concepts in probability theory random variables and probability distributions descriptive statistics point estimation of parameters and confidence intervals statistical hypothesis testing simple linear regression prerequisites for mathematical statistics probability and statistics main topics descriptive statistics sampling distributions point estimations confidence intervals hypothesis testing neymanpearson lemma likelihood ratio tests ztests and ttests goodness of fit test linear regression",
+            "reference": [
+                "probability and statistics topics basic concepts in probability theory random variables and probability distributions descriptive statistics point estimation of parameters and confident interval statistical hypothesis testing simple linear regression prerequisites calculus 1b mathematical statistics topics descriptive statistics sampling distributions point estimations confidence interval hypothesis testing linear regression prerequisites probability and statistics"
+            ]
+        },
+        {
+            "prediction": "basic concepts of algorithms and programming languages introduced include basic knowledge and principles of computer programming and cc programming language along with basic concepts of algorithms prerequisites for advanced programming and data structures and algorithms are fundamentals computer programming",
+            "reference": [
+                "advanced programming basic concepts of algorithms and programming languages analyzing and evaluating complexity of algorithms algorithms and programming techniques to solve realworld problems improve efficiency of algorithms dynamic memory usage and management strings and files recursive technique basic data structures in stk library some advanced algorithms and techniques prerequisites fundamentals computer programming data structures and algorithms basic concepts of algorithms and programming languages basic knowledges of data structure and algorithms how to reperform data according to problem purposes two basic methods of searching and eleven arrangements algorithms basic data structures algorithms search methods arrangements and dynamic data structures prerequisites fundamentals computer programming"
+            ]
+        },
+        {
+            "prediction": "problemsolving methods covered include heuristic methods knowledge representation methods knowledge processing techniques and approximate reasoning prerequisites for introduction to artificial intelligence are data structures and algorithms and discrete mathematics while advanced artificial intelligence has no prerequisites",
+            "reference": [
+                "introduction to artificial intelligence problemsolving methods problem solving methods heuristic methods state space and search problem knowledge representation techniques knowledge representation methods knowledge processing techniques knowledge demonstration prerequisites data structures and algorithms discrete mathematics advance machine learning problemsolving methods depth first breadth first complexity completeness and optimality of search methods implementing dfs and bfs iterative deepening search heuristics for search hillclimbing bestfirst beam search optimal paths branch and bound parallel search bidirectional search games minimax alphabeta pruning constraint satisfaction search cryptographic problems realtime iterativedeepening knowledge representation techniques knowledge representation and reasoning building knowledge base propositional logic predicate logic theorem proving prerequisites introduction to artificial intelligence"
+            ]
+        },
+        {
+            "prediction": "general chemistry 1 has no prerequisites and covers atomic structure periodic properties chemical bonds and interactions in matter general chemistry laboratory 1 requires general chemistry 1 as prerequisite and focuses on laboratory techniques safe handling of equipment and accurate data manipulation",
+            "reference": [
+                "general chemistry 1 contents theoretical foundations of chemistry related to basic models of atomic structure periodic changes in properties of chemical elements fundamental forces of interaction in matter and influence of chemical elements their influence on properties of matter in solid liquid and gaseous states structure of atoms and molecules periodic changes in some properties of chemical elements basic types of chemical bonds relationship between fundamental forces of interaction in matter and physical properties of matter prerequisites none general chemistry laboratory 1 contentsexperimental techniques chemical processes of experiments equipment in chemistry lab calculate write chemistry laboratory report work in lab safely scientifically techniques used by practicing chemist use and handle safely and properly laboratory glassware carry out experiments safely and carefully in laboratory obtain data accurately and to manipulate data correctly prerequisites general chemistry 1"
+            ]
+        },
+        {
+            "prediction": "there are no prerequisites for english 2 english 3 and english 4 as per available information",
+            "reference": [
+                "prerequisites english 2 english 1 english 3 english 2 english 4 english 3 relationship english 1 is prerequisite for english 2 english 2 is prerequisite for english 3 and english 3 is prerequisite for english 4 this forms sequential prerequisite chain"
+            ]
+        },
+        {
+            "prediction": "prerequisite for calculus 2b is calculus 1b and for probability and statistics it is also calculus 1b both courses require completion of calculus 1b",
+            "reference": [
+                "prerequisites calculus 2b calculus 1b probability and statistics calculus 1b relationship calculus 1b is prerequisite for both calculus 2b and probability and statistics"
+            ]
+        },
+        {
+            "prediction": "prerequisite for advanced programming is fundamentals computer programming data structures and algorithms is not listed",
+            "reference": [
+                "prerequisite common prerequisite for both advanced programming and data structures and algorithms is fundamentals computer programming"
+            ]
+        },
+        {
+            "prediction": "introduction to artificial intelligence requires prerequisites of data structures and algorithms and discrete mathematics advanced artificial intelligence has no prerequisites",
+            "reference": [
+                "prerequisites for introduction to artificial intelligence data structures and algorithms and discrete mathematics for advance machine learning introduction to artificial intelligence sequence of required knowledge blocks data structures and algorithms and discrete mathematics are foundational for introduction to artificial intelligence which in turn is prerequisite for advance machine learning"
+            ]
+        },
+        {
+            "prediction": "prerequisite for database management system is introduction to database systems which precedes it in database studies pathway",
+            "reference": [
+                "prerequisite prerequisite for database management system is introduction to database systems course that precedes it introduction to database systems precedes database management system in database studies pathway"
+            ]
+        },
+        {
+            "prediction": "course type for all is compulsory and offering semester for all is odd semester",
+            "reference": [
+                "marxistleninist philosophy compulsory odd semester marxistleninist political economy compulsory odd semester scientific socialism compulsory odd semester history of vietnamese communist party compulsory odd semester"
+            ]
+        },
+        {
+            "prediction": "hochiminh\u2019s ideology compulsory course even semester general law unknown general economics unknown",
+            "reference": [
+                "hochiminh\u2019s ideology compulsory even semester general law compulsory odd semester general economics elective even semester"
+            ]
+        },
+        {
+            "prediction": "groupworking and learning skills elective even semester psychology not provided general environment not provided",
+            "reference": [
+                "pychology elective even semester groupworking and learning skills elective even semester general environment elective even semester"
+            ]
+        },
+        {
+            "prediction": "introduction to data science compulsory even semester data mining compulsory even semester introduction to machine learning not available",
+            "reference": [
+                "introduction to data science compulsory even semester data mining compulsory even semester introduction to machine learning compulsory even semester"
+            ]
+        },
+        {
+            "prediction": "deep learning for data science is elective course in even semester recommender system and seminar on data science are not mentioned",
+            "reference": [
+                "deep learning for data science elective even semester recommender system elective even semester seminar on data science elective odd semester"
+            ]
+        },
+        {
+            "prediction": "university of science vnuhcm",
+            "reference": [
+                "common academic institution university of science vnuhcm"
+            ]
+        },
+        {
+            "prediction": "advanced programming object oriented programming",
+            "reference": [
+                "compulsory courses even semester fundamentals computer programming as prerequisite advanced programming object oriented programming"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "elective courses odd semester general biology 1 as prerequisite general biology 2 labwork on general biology 1"
+            ]
+        },
+        {
+            "prediction": "probability and statistics practice id mth00085 and probability and statistics id mth00040",
+            "reference": [
+                "compulsory courses odd semester calculus 1b as prerequisite probability and statistics probability and statistics practice"
+            ]
+        },
+        {
+            "prediction": "le nhan my general economics tran huong thao groupworking and learning skills no information for psychology",
+            "reference": [
+                "instructors general economics le nhan my psychology tran huong thao groupworking and learning skills tran huong thao"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "7",
+        "8",
+        "8",
+        "9",
+        "7",
+        "8",
+        "8",
+        "8",
+        "7",
+        "Score: 8",
+        "9",
+        "8",
+        "7",
+        "8",
+        "8",
+        "7",
+        "Score: 9",
+        "2",
+        "7",
+        "9",
+        "8",
+        "4",
+        "5",
+        "7",
+        "5",
+        "3",
+        "9",
+        "9",
+        "8",
+        "9"
+    ]
+}

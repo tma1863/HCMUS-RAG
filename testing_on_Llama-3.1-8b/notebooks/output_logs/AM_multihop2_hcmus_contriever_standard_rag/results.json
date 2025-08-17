@@ -1,0 +1,230 @@
+{
+    "retrieval": {
+        "Recall@1": 0.2722,
+        "Recall@2": 0.4111,
+        "Recall@5": 0.6
+    },
+    "open_ended": {
+        "bleu": "14.13",
+        "meteor": "41.41",
+        "rougeL": "43.91"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.5123
+    },
+    "comparisons": [
+        {
+            "prediction": "for marxistleninist philosophy understanding worldview and methodology applying knowledge creatively in social issues for marxistleninist political economy core knowledge of political economy analytical skills for economic relations and building marxistleninist stance",
+            "reference": [
+                "for marxistleninist philosophy basic contents of worldview and marxistleninist philosophical methodology basic general and systematic knowledge of problems of marxistleninist philosophy for marxistleninist political economy basic and core knowledge of marxistleninist political economy"
+            ]
+        },
+        {
+            "prediction": "both courses emphasize analytical skills and communication skills",
+            "reference": [
+                "reasoning skills public speaking skills teamwork skills creative skills"
+            ]
+        },
+        {
+            "prediction": "calculus 1a basic knowledge of calculus understanding of continuity limits derivatives and riemann integrals calculus 2a theory of series of real numbers properties of differentiable functions on rn analysis 3a not specified but likely advanced analysis concepts",
+            "reference": [
+                "for calculus 1a basic knowledge of calculus as foundation for specialized modules for calculus 2a theory of series of real numbers properties of differentiable functions on rn for analysis 3a integral of functions of many variables and relationships between differential and integral of functions of many variables minimum outcome standard is at level in j stewarts calculus textbook for science and engineering students"
+            ]
+        },
+        {
+            "prediction": "teamwork and communication",
+            "reference": [
+                "teamwork communication and behavioral skills"
+            ]
+        },
+        {
+            "prediction": "understanding of biological structures and functions knowledge of metabolic processes and emphasis on scientific inquiry",
+            "reference": [
+                "biodiversity respiration"
+            ]
+        },
+        {
+            "prediction": "general law equips students with knowledge of basic legal concepts and terms related to legal system and skills in analyzing legal regulations and working in groups marxistleninist political economy provides knowledge of marxistleninist political economy and skills in analytical thinking and assessing economic relations",
+            "reference": [
+                "for general law knowledge basic legal concepts and terms related to state apparatus and vietnamese legal system solve some exercise cases based on provisions of law book in legal system of vietnam skills analyzing legal regulations lookup legal documents working group for marxistleninist political economy knowledge basic and core knowledge of marxistleninist political economy in context of economic development of country and world today skills thinking and analytical skills assessing and identifying nature of economic benefit relations in countrys socioeconomic development contribute to building stance and ideology of marxismleninism towards students"
+            ]
+        },
+        {
+            "prediction": "expected knowledge includes programming logic modularization and c language skills skills involve mathematical reasoning and problemsolving in linear algebra and abstract algebra",
+            "reference": [
+                "for linear algebra knowledge knowledge of matrices on number fields and applying them to solving systems of linear equations determinants and their applications vector spaces and linear transformations skills calculating matrices solving system of linear equations calculating coordinates of vector according to basis in finite dimensional vector space changing when changing base representing linear operator by matrix finding image and kernel of linear operators using maple softwarefor abstract algebra knowledge basic abstract algebraic structures skills become familiar with symbols and formal calculations for fundamentals of computer programming knowledge logic of computer programming how computers operate with programming languages and how to write instructions using flowchart or pseudocode how to modularize computer program how to write computer programs in c language skills describe skills and fundamentals of computer programming"
+            ]
+        },
+        {
+            "prediction": "knowledge outcomes include understanding atomic structure periodic properties chemical bonds scientific methods and practical applications of chemistry concepts",
+            "reference": [
+                "for general chemistry 1 theoretical foundations of chemistry related to basic models of atomic structure periodic changes in properties of chemical elements fundamental forces of interaction in matter and influence of chemical elements their influence on properties of matter in solid liquid and gaseous states structure of atoms and molecules periodic changes in some properties of chemical elements basic types of chemical bonds relationship between fundamental forces of interaction in matter and physical properties of matter for general chemistry 2 facts concepts and vocabulary of chemistry that will enable them to make informed decisions on issues that involve chemical concepts"
+            ]
+        },
+        {
+            "prediction": "knowledge of measure theory probability theory metric topology and skills in applying these concepts in exercises and realworld problems",
+            "reference": [
+                "for measure theory and probability knowledge basic knowledge of foundation of measure theory and theory of integral and application of measure theory in probability theory for analysis 2a knowledge basic concepts and techniques of metric topology for multivariable functions and vectors basic concepts of metrics closed open compact sets completeness series in normed space skills exercises that demonstrate above concepts and their applications"
+            ]
+        },
+        {
+            "prediction": "general objectives for theoretical mechanics mth10427 are to provide basic knowledge of newtonian mechanics and help students solve mechanical problems specific knowledge outcomes include understanding newtons laws building mathematical models and solving mechanical problems for continuum mechanics mth10428 general objective is to provide fundamental knowledge of continuums and mathematical modeling with specific knowledge outcomes including understanding concept of continuum and applying laws to model continuums",
+            "reference": [
+                "for theoretical mechanics general objective basic knowledge of newtonian mechanics know how to set and solve basic mechanical problems know how to analyze and explain mechanical phenomena based on newtons laws mathematical modeling of realworld processes knowledge newtons laws and their consequences how to build mathematical models describing mechanical phenomena how to solve some mechanical problems for continuum mechanics general objective fundamental knowledge of continuums in mechanics and mathematical modeling for continuums indepth research directions on continuous environmental objects deformed solids fluids knowledge concept of continuum laws of physics apply concepts and laws to mathematically model continuum"
+            ]
+        },
+        {
+            "prediction": "main content of calculus 1a includes basics of continuity limit derivative and riemann integral with no prerequisites main content of calculus 2a includes differential calculus of multivariable functions extremal problems and series of real numbers with prerequisite of completing calculus 1a",
+            "reference": [
+                "for calculus 1a main content basics of continuity limit derivative riemann integral prerequisites no prerequisites for calculus 2a main content basic knowledge of differential calculus of multivariable functions bound and unconstrained extremal problems in multidimensional spaces concept of series of real numbers prerequisites calculus 1a"
+            ]
+        },
+        {
+            "prediction": "teaching mathematics in english 1 mth10119 prerequisites none course content operation review algebra basic geometry trigonometry probability and statistics calculus teaching mathematics in english 2 mth10120 prerequisites none course content general of teaching math in english teaching algebra teaching geometry teaching probability and statistics teaching calculus",
+            "reference": [
+                "for english 1 course content vocabulary grammar reading listening speaking and writing in wide range of topics such as leisure activities important life events feelings and emotions attitudes physical appearance descriptions travel plans presenting dreams countries people and languages prerequisites no prerequisites for english 2 course content vocabulary grammar reading listening speaking and writing in wide range of topics such as everyday items important life events holiday plans health problems hobbies and interests personalities and financerelated issues prerequisites english 1 for english 3 baa00013 course content vocabulary grammar reading listening speaking and writing in wide range of topics namely leisure activities important life events feelings and emotions attitudes physical appearance descriptions travel plans presenting dreams countries people and languages prerequisites english 2"
+            ]
+        },
+        {
+            "prediction": "topics covered in abstract algebra include groups rings integer domains fields polynomial rings permutation group alternating group cyclic group and polynomial ring on number fields prerequisite is linear algebra",
+            "reference": [
+                "for abstract algebra topics basic algebraic structures such as groups rings integer domains fields and polynomial rings on fields permutation group alternating group cyclic group polynomial ring on number fields especially on rational number fields prerequisites linear algebra for abstract algebra practice topics basic computational skills on algebraic structures such as groups rings integral domains and fields use software eg gap to better understand structure of theories learned prerequisites linear algebra linear algebra practice"
+            ]
+        },
+        {
+            "prediction": "for general chemistry laboratory 1 che00081 prerequisite is general chemistry 1 and course contents include proficiency in laboratory techniques safe handling of glassware conducting experiments and data manipulation for general chemistry laboratory 2 che00082 prerequisite is general chemistry 2 and course contents cover basic operations in chemistry lab components of matter stoichiometry titration weight measuring and properties of substances",
+            "reference": [
+                "for general chemistry laboratory 1 course contents techniques used by practicing chemist use and handle safely and properly laboratory glassware carry out experiments safely and carefully in laboratory obtain data accurately and to manipulate data correctly prerequisites general chemistry 1 for general chemistry laboratory 2 course contents understanding basic operation in chemistry laboratory components of matter stoichiometry determination of concentration by titration weight measuring preparation and properties of inorganic and organic substances prerequisites general chemistry 2"
+            ]
+        },
+        {
+            "prediction": "solid mechanics mth10434 has prerequisite of continuum mechanics and covers topics such as laws of behavior of solid bodies stressstrain relationships formulation and solution strategies and numerical finite element methods finite element method mth10429 has no prerequisites and includes topics like numerical methods applications to scientific problems and theories related to partial differential equations and elasticity",
+            "reference": [
+                "for solid mechanics content topics stressstrain relationship in elastic viscoelastic and elastoplastic theories analysis of behavior of plate shell composite materials fracture mechanics linear elastic solids formulation and solution strategies strain energy and related principles twodimensional formulation and problem solution anisotropic elasticity thermoelasticity nonhomogeneous elasticity numerical finite element method introduction of plasticity prerequisites continuum mechanics for finite element method content topics introduction to numerical methods and finite element methods application of finite element method to scientific and engineering problems fundamental theory of finite element method finite element for partial differential equations finite element for elasticity theory prerequisites none"
+            ]
+        },
+        {
+            "prediction": "there are no prerequisites for english 2 english 3 and english 4 and they are related in that they are all accessible without prior requirements",
+            "reference": [
+                "prerequisite for english 2 is english 1 prerequisite for english 3 is english 2 prerequisite for english 4 is english 3 prerequisite relationships among them show sequential dependency english 1 must be completed before english 2 which must be completed before english 3 and english 3 must be completed before english 4"
+            ]
+        },
+        {
+            "prediction": "prerequisites for analysis 2a analysis 3a and analysis 4a are not explicitly stated but they likely follow chain where analysis 1a is prerequisite for analysis 2a analysis 2a is prerequisite for analysis 3a and analysis 3a is prerequisite for analysis 4a",
+            "reference": [
+                "prerequisite for analysis 2a is analysis 1a prerequisites for analysis 3a are analysis 1a analysis 2a calculus 1a prerequisites for analysis 4a are analysis 1a analysis 2a prerequisite chain shows that analysis 1a is fundamental prerequisite for all three analysis 2a also builds upon analysis 1a and is in turn prerequisite for analysis 3a and analysis 4a calculus 1a is additional prerequisite specifically for analysis 3a"
+            ]
+        },
+        {
+            "prediction": "prerequisite for abstract algebra is linear algebra and prerequisite for algebra a2 is also linear algebra relationship is that both courses require linear algebra as foundational course",
+            "reference": [
+                "prerequisites for abstract algebra practice are linear algebra linear algebra practice prerequisite for algebra a2 is linear algebra relationship between these prerequisite courses is that linear algebra is shared foundational course linear algebra practice is additional prerequisite specifically for abstract algebra practice"
+            ]
+        },
+        {
+            "prediction": "analysis 1a is prerequisite for measure theory and probability and measure theory and probability is prerequisite for mathematical statistics",
+            "reference": [
+                "measure theory and probability requires analysis 1a as prerequisite mathematical statistics requires both analysis 1a and measure theory and probability as prerequisites prerequisite relationship indicates that analysis 1a is foundational course for both and measure theory and probability is subsequent prerequisite for mathematical statistics"
+            ]
+        },
+        {
+            "prediction": "prerequisites for pedagogical practice are didactics of teaching general education methods of teaching mathematics 1 and pedagogical psychology they interrelate by providing foundational knowledge and skills essential for effective teaching and classroom management",
+            "reference": [
+                "prerequisites for pedagogical practice are didactics of teaching general education methods of teaching mathematics 1 pedagogical psychology there are none interrelationships between these four prerequisites themselves"
+            ]
+        },
+        {
+            "prediction": "both courses are compulsory marxistleninist philosophy is offered in odd semester and scientific socialism is offered in even semester",
+            "reference": [
+                "for marxistleninist philosophy compulsory odd semester for scientific socialism compulsory even semester"
+            ]
+        },
+        {
+            "prediction": "both courses are compulsory and available in odd semester",
+            "reference": [
+                "for psychology elective even semester for general economics elective even semester"
+            ]
+        },
+        {
+            "prediction": "general law is compulsory course offered in odd semester while ho chi minh\u2019s ideology is offered in even semester",
+            "reference": [
+                "general law is compulsory course offered in odd semester ho chi minh\u2019s ideology is compulsory course offered in even semester"
+            ]
+        },
+        {
+            "prediction": "both analysis 1a and calculus 1a are offered in odd semester and are compulsory courses",
+            "reference": [
+                "analysis 1a is offered in odd semester and is compulsory course calculus 1a is offered in odd semester and is compulsory course"
+            ]
+        },
+        {
+            "prediction": "both general physics 1 and general physics 2 are elective courses offered in odd semester",
+            "reference": [
+                "for general physics 1 elective odd semester for general physics 2 elective odd semester"
+            ]
+        },
+        {
+            "prediction": "general biology i is elective course offered in odd semester with no prerequisites general biology ii is also elective course offered in odd semester requiring prior completion of general biology i",
+            "reference": [
+                "for general biology i elective odd semester none as prerequisite for general biology ii elective odd semester general biology i as prerequisite"
+            ]
+        },
+        {
+            "prediction": "course type compulsory semester offered even semester prerequisites none for optimal teaching and learning methods didactics of teaching details not provided",
+            "reference": [
+                "for optimal teaching and learning methods compulsory even semester no prerequisites for didactics of teaching compulsory even semester none as prerequisite"
+            ]
+        },
+        {
+            "prediction": "numerical analysis 1 is compulsory course offered in even semester with prerequisites of calculus 1a calculus 2a and computational software laboratory equations of mathematical physics is also compulsory course offered in odd semester with prerequisites of analysis 1a calculus 1a and calculus 2a",
+            "reference": [
+                "for numerical analysis 1 compulsory even semester calculus 1a calculus 2a computational software laboratory as prerequisites for equations of mathematical physics compulsory odd semester analysis 1a calculus 1a calculus 2a as prerequisites"
+            ]
+        },
+        {
+            "prediction": "operations research is compulsory course offered in odd semester with prerequisite of prior completion of linear programming linear programming is also compulsory course offered in odd semester with no prerequisites",
+            "reference": [
+                "for operations research compulsory odd semester linear programming as prerequisite for linear programming compulsory odd semester none as prerequisite"
+            ]
+        },
+        {
+            "prediction": "le nhan my for general economics tran huong thao for psychology and tran huong thao for groupworking and learning skills",
+            "reference": [
+                "instructor for general economics is le nhan my instructor for psychology is tran huong thao instructor for groupworking and learning skills is tran huong thao"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "9",
+        "8",
+        "8",
+        "8",
+        "6",
+        "8",
+        "9",
+        "8",
+        "5",
+        "8",
+        "8",
+        "8",
+        "8",
+        "9",
+        "8",
+        "9",
+        "8",
+        "9",
+        "8",
+        "8",
+        "8",
+        "5",
+        "5"
+    ]
+}

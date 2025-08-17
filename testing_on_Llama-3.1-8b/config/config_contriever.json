@@ -1,0 +1,6 @@
+{
+  "embedding_model_name": "facebook/contriever",
+  "embedding_vector_dimension": 768,
+  "embedding_batch_size": 32,
+  "save_dir": "outputs/contriever_results"
+}

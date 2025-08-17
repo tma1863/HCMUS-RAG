@@ -1,0 +1,82 @@
+# my_docker_project_docker/docker-compose.yml
+
+services:
+  # Ollama service with GPU support
+  ollama:
+    image: ollama/ollama:latest
+    container_name: hipporag_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_ORIGINS=*
+      - OLLAMA_HOST=0.0.0.0
+      - OLLAMA_GPU_LAYERS=999  # Use all GPU layers
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    runtime: nvidia
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # HippoRAG application with Gradio Dashboard
+  hipporag:
+    build: .
+    container_name: hipporag_app
+    command: ["python", "simple_gradio_app.py"]  #  Simple Gradio app for testing
+    ports:
+      - "7860:7860"  #  Gradio default port
+    volumes:
+      - ./outputs:/app/outputs
+      - ./logs:/app/logs
+      - ./embedding_stores:/app/embedding_stores
+      - ./data:/app/data
+      - ./utils:/app/utils
+      - ./config:/app/config
+      - ./hipporag_complete.py:/app/hipporag_complete.py
+      - ./main_hipporag.py:/app/main_hipporag.py
+      - ./hipporag_evaluation.py:/app/hipporag_evaluation.py
+      - ./hipporag_gradio_app.py:/app/hipporag_gradio_app.py  #  Gradio app
+      - ./simple_gradio_app.py:/app/simple_gradio_app.py  # Simple Gradio app for testing
+      - ./QA for testing:/app/QA for testing  #  Test data
+    environment:
+      - DOCKER_ENV=true
+      - OLLAMA_HOST=http://ollama:11434
+      - OLLAMA_PORT=11434
+      - OLLAMA_BASE_URL=http://ollama:11434/api/generate
+      - LLM_NAME=llama3:8b
+      - TEMPERATURE=0
+      - API_URL=http://ollama:11434/api/generate
+      - EMBEDDING_MODEL=facebook/contriever
+      - SAVE_DIR=/app/outputs
+      - LOGS_DIR=/app/logs
+      - EMBEDDING_STORE_DIR=/app/embedding_stores
+      - GRADIO_SERVER_NAME=0.0.0.0  # Allow external access
+      - GRADIO_SERVER_PORT=7860     # Gradio port
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860"]  # Gradio health check
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  ollama_data:
+
+networks:
+  default:
+    name: hipporag_network

@@ -1,0 +1,300 @@
+{
+    "retrieval": {
+        "Recall@1": 0.55,
+        "Recall@2": 0.625,
+        "Recall@5": 0.75
+    },
+    "open_ended": {
+        "bleu": "81.82",
+        "meteor": "55.47",
+        "rougeL": "78.27"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.725,
+        "F1": 0.781
+    },
+    "comparisons": [
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "windows operating system",
+            "reference": [
+                "windows operating system"
+            ]
+        },
+        {
+            "prediction": "fundamentals computer programming",
+            "reference": [
+                "fundamentals computer programming"
+            ]
+        },
+        {
+            "prediction": "nguyen ngoc long",
+            "reference": [
+                "nguyen ngoc long"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "compulsory"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "r",
+            "reference": [
+                "r or spss"
+            ]
+        },
+        {
+            "prediction": "5",
+            "reference": [
+                "5"
+            ]
+        },
+        {
+            "prediction": "nguyen thanh binh",
+            "reference": [
+                "nguyen thanh binh"
+            ]
+        },
+        {
+            "prediction": "fundamentals computer programming",
+            "reference": [
+                "fundamentals computer programming"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "5",
+            "reference": [
+                "6"
+            ]
+        },
+        {
+            "prediction": "r and python",
+            "reference": [
+                "r or python programming"
+            ]
+        },
+        {
+            "prediction": "r",
+            "reference": [
+                "r statistical software"
+            ]
+        },
+        {
+            "prediction": "linear programming problems",
+            "reference": [
+                "linear programming problem"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "linear programming",
+            "reference": [
+                "linear programming"
+            ]
+        },
+        {
+            "prediction": "data structures and algorithms",
+            "reference": [
+                "data structures and algorithms"
+            ]
+        },
+        {
+            "prediction": "nguyen dang minh",
+            "reference": [
+                "nguyen dang minh"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "elective",
+            "reference": [
+                "elective"
+            ]
+        },
+        {
+            "prediction": "software agent",
+            "reference": [
+                "software agent"
+            ]
+        },
+        {
+            "prediction": "8",
+            "reference": [
+                "8"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "power bi",
+            "reference": [
+                "power bi"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "14",
+            "reference": [
+                "14"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "none"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "even semester",
+            "reference": [
+                "even semester"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "yes"
+            ]
+        },
+        {
+            "prediction": "nguyen vu huy",
+            "reference": [
+                "nguyen vu huy"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "odd semester"
+            ]
+        },
+        {
+            "prediction": "compulsory",
+            "reference": [
+                "compulsory"
+            ]
+        },
+        {
+            "prediction": "nguyen thanh binh",
+            "reference": [
+                "nguyen thanh binh"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "1",
+        "10",
+        "9",
+        "10",
+        "10",
+        "9",
+        "10",
+        "8",
+        "10",
+        "9",
+        "9",
+        "3",
+        "7",
+        "8",
+        "7",
+        "8",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10",
+        "6",
+        "3",
+        "8",
+        "8",
+        "9",
+        "10"
+    ]
+}

@@ -1,0 +1,34 @@
+# === CORE DEPENDENCIES (ACTUALLY USED) ===
+# AI/ML Stack  
+torch>=2.0.0
+transformers>=4.30.0
+numpy>=1.24.0
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Data Processing
+pandas>=2.0.0
+pyarrow>=12.0.0  # For parquet support
+
+# Graph Processing  
+igraph>=0.10.0
+
+# HTTP & Config
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Text Processing & Evaluation
+nltk>=3.8.0
+rouge-score>=0.1.2
+
+# Utilities
+tqdm>=4.65.0
+
+# Development Tools
+pytest>=7.4.0
+black>=23.0.0
+
+# Gradio Dashboard
+gradio>=4.0.0

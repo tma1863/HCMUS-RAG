@@ -1,0 +1,4 @@
+Test_Type,Exact_Match,F1_Score,BLEU,METEOR,ROUGE_L
+closed_end,0.6513,0.7162,0.2163,0.3922,0.7170
+multihop2,0.0000,0.4266,0.1276,0.2779,0.3802
+opened_end,0.0000,0.5217,0.2392,0.3785,0.5118

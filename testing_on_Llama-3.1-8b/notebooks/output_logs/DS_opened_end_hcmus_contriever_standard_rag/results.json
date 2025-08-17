@@ -1,0 +1,300 @@
+{
+    "retrieval": {
+        "Recall@1": 0.425,
+        "Recall@2": 0.525,
+        "Recall@5": 0.625
+    },
+    "open_ended": {
+        "bleu": "11.30",
+        "meteor": "26.35",
+        "rougeL": "36.29"
+    },
+    "closed_ended": {
+        "ExactMatch": 0.0,
+        "F1": 0.366
+    },
+    "comparisons": [
+        {
+            "prediction": "assigned lecturers",
+            "reference": [
+                "assigned lecturers at university of science vnuhcm is instuctor of marxistleninist philosophy"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes marxistleninist political economy is categorized as compulsory course"
+            ]
+        },
+        {
+            "prediction": "scientific socialism",
+            "reference": [
+                "scientific socialism course equips students with basic contents of scientific socialism which is one of three components constituting marxismleninism"
+            ]
+        },
+        {
+            "prediction": "19752018",
+            "reference": [
+                "history of vietnamese communist party course covers period of national construction and defense during countrys transition to socialism conducted renovation work 19752018"
+            ]
+        },
+        {
+            "prediction": "no",
+            "reference": [
+                "no hochiminh\u2019s ideology is offered in even semester"
+            ]
+        },
+        {
+            "prediction": "basic legal concepts and terms related to legal system and state apparatus",
+            "reference": [
+                "general law course covers basic legal concepts and terms related to countrys legal system and state apparatus"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "general economics course has none as its prerequisite"
+            ]
+        },
+        {
+            "prediction": "analyzing synthesizing comparing and generalizing",
+            "reference": [
+                "psychology course helps students develop capacity to study documents including skills to analyze synthesize compare and generalize"
+            ]
+        },
+        {
+            "prediction": "teamwork presentation communication",
+            "reference": [
+                "students will gain teamwork presentation and communication skills from groupworking and learning skills course"
+            ]
+        },
+        {
+            "prediction": "preintermediate level",
+            "reference": [
+                "learners will be able to understand and use grammar structures at preintermediate level after completing english 1"
+            ]
+        },
+        {
+            "prediction": "no prerequisites mentioned",
+            "reference": [
+                "english 2 requires prior completion of english 1"
+            ]
+        },
+        {
+            "prediction": "new cutting edge intermediate",
+            "reference": [
+                "english 3 course uses first six modules in book new cutting edge intermediate"
+            ]
+        },
+        {
+            "prediction": "english 3",
+            "reference": [
+                "prerequisite for english 4 is english 3"
+            ]
+        },
+        {
+            "prediction": "functions and limits derivatives applications of differentiation integrals and applications of integration series",
+            "reference": [
+                "calculus 1b content topics cover functions and limits derivatives applications of differentiation integrals and applications of integration series"
+            ]
+        },
+        {
+            "prediction": "matlab",
+            "reference": [
+                "students will apply their knowledge to practical computations using matlab software in calculus 1b practice course"
+            ]
+        },
+        {
+            "prediction": "calculus 1b",
+            "reference": [
+                "calculus 2b requires prior completion of calculus 1b"
+            ]
+        },
+        {
+            "prediction": "rn space partial derivatives multiple integrals line integrals surface integrals order differential equations",
+            "reference": [
+                "vcalculus 2b practice content topics cover rn space partial derivatives multiple integrals line integrals surface integrals order differential equations"
+            ]
+        },
+        {
+            "prediction": "maple software",
+            "reference": [
+                "students will learn to use maple software in linear algebra course"
+            ]
+        },
+        {
+            "prediction": "to help students understand more linear algebra via doing exercise",
+            "reference": [
+                "objective of linear algebra practice course is to help students understand more linear algebra via doing exercise"
+            ]
+        },
+        {
+            "prediction": "calculus 1b",
+            "reference": [
+                "prerequisite for probability and statistics is calculus 1b"
+            ]
+        },
+        {
+            "prediction": "r",
+            "reference": [
+                "statistical software r is used for practical sessions in probability and statistics practice course"
+            ]
+        },
+        {
+            "prediction": "to introduce students to fundamentals of logic counting principles integers relations recurrence relations and boolean functions",
+            "reference": [
+                "general objective of discrete mathematics course is to introduce students to fundamentals of logic counting principles integers relations recurrence relations and boolean functions"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes discrete mathematics practice course involves using computer tools and programming languages to find solutions and solve problems in discrete mathematics"
+            ]
+        },
+        {
+            "prediction": "graph theory and mathematical combinatorics",
+            "reference": [
+                "combinatorics course provides knowledge of structure of graph theory and mathematical combinatorics"
+            ]
+        },
+        {
+            "prediction": "cc",
+            "reference": [
+                "cc programming language is introduced in fundamentals computer programming course"
+            ]
+        },
+        {
+            "prediction": "matlab",
+            "reference": [
+                "computational software laboratory course covers basic computational programming knowledge using matlab"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes introduction to information technology is compulsory course"
+            ]
+        },
+        {
+            "prediction": "yes",
+            "reference": [
+                "yes general environment falls under elective category"
+            ]
+        },
+        {
+            "prediction": "general biology 1",
+            "reference": [
+                "prerequisite for human and environment course is general biology 1"
+            ]
+        },
+        {
+            "prediction": "presentation on deformations of earths crust and earthquake",
+            "reference": [
+                "first content topic in earth science is presentation on deformations of earths crust and earthquake volcanic activities and membrane tectonic mechanism"
+            ]
+        },
+        {
+            "prediction": "describe structure of atoms and molecules",
+            "reference": [
+                "first content topic in general chemistry 1 is to describe structure of atoms and molecules"
+            ]
+        },
+        {
+            "prediction": "content topics covered in general chemistry 2 include chemical thermodynamics chemical kinetics general chemical equilibria acid and base equilibria ph buffers ionic compound solubility and equilibria and electrochemistry",
+            "reference": [
+                "contents of general chemistry 2 are chemical thermodynamics chemical kinetics general chemical equilibria acid and base equilibria ph buffers ionic compound solubility and equilibria electrochemistry"
+            ]
+        },
+        {
+            "prediction": "general chemistry 1",
+            "reference": [
+                "general chemistry laboratory 1 requires prior completion of general chemistry 1"
+            ]
+        },
+        {
+            "prediction": "general chemistry 2",
+            "reference": [
+                "prerequisite for general chemistry laboratory 2 is general chemistry 2"
+            ]
+        },
+        {
+            "prediction": "not specified",
+            "reference": [
+                "there are 4 parts covered in topics about scientific methods to study life"
+            ]
+        },
+        {
+            "prediction": "plant biology animal biology environmental biology",
+            "reference": [
+                "three main parts of general biology 2 course content are part 1 plant morphology and function part 2 animal form and function and part 3 ecology"
+            ]
+        },
+        {
+            "prediction": "none",
+            "reference": [
+                "general biology 1 is prerequisite for labwork on general biology 1"
+            ]
+        },
+        {
+            "prediction": "10",
+            "reference": [
+                "there are 10 topics covered in content of labwork on general biology 2"
+            ]
+        },
+        {
+            "prediction": "kinematics dynamics statics work energy linear momentum gravitation and thermodynamics",
+            "reference": [
+                "general physics 1 course covers principles of kinematics dynamics statics work energy linear momentum gravitation and thermodynamics"
+            ]
+        },
+        {
+            "prediction": "calculus 1b and general physics 1",
+            "reference": [
+                "prerequisites for general physics 2 are calculus 1b general physics 1"
+            ]
+        }
+    ],
+    "gpt_judgement": [
+        "7",
+        "9",
+        "8",
+        "9",
+        "1",
+        "9",
+        "8",
+        "7",
+        "8",
+        "9",
+        "7",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "8",
+        "6",
+        "7",
+        "7",
+        "7",
+        "8",
+        "1",
+        "7",
+        "9",
+        "8",
+        "7",
+        "3",
+        "6",
+        "9",
+        "8",
+        "8",
+        "8",
+        "4",
+        "1",
+        "10",
+        "10",
+        "8"
+    ]
+}
