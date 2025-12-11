@@ -1,453 +1,95 @@
-<h1 align="center">HippoRAG 2: From RAG to Memory</h1>
-<p align="center">
-    <img src="https://github.com/OSU-NLP-Group/HippoRAG/raw/main/images/hippo_brain.png" width="55%" style="max-width: 300px;">
-</p>
+# Course Information Question-Answering System for University Students: Graph-Integrated RAG (HippoRAG-2)
 
-[<img align="center" src="https://colab.research.google.com/assets/colab-badge.svg" />](https://colab.research.google.com/drive/1nuelysWsXL8F5xH6q4JYJI8mvtlmeM9O#scrollTo=TjHdNe2KC81K)
+## Introduction
+This undergraduate thesis project focuses on designing and developing a specialized **Course Information Question-Answering (QA) System** for university students. The system is built upon the **Retrieval-Augmented Generation (RAG)** framework, with the primary goal of supporting fast, accurate, and efficient course lookup. The research was conducted by the team with 2 students of the Data Science program, Faculty of Mathematics and Computer Science, at the University of Science, Vietnam National University, Ho Chi Minh City (VNU-HCM). Besides, all research information in `report.pdf` file are written in Vietnamese.
 
-[<img align="center" src="https://img.shields.io/badge/arXiv-2502.14802 HippoRAG 2-b31b1b" />](https://arxiv.org/abs/2502.14802)
-[<img align="center" src="https://img.shields.io/badge/🤗 Dataset-HippoRAG 2-yellow" />](https://huggingface.co/datasets/osunlp/HippoRAG_2/tree/main)
-[<img align="center" src="https://img.shields.io/badge/arXiv-2405.14831 HippoRAG 1-b31b1b" />](https://arxiv.org/abs/2405.14831)
-[<img align="center" src="https://img.shields.io/badge/GitHub-HippoRAG 1-blue" />](https://github.com/OSU-NLP-Group/HippoRAG/tree/legacy)
-[<img align="center" src="https://discord.com/api/guilds/1344074245705302206/widget.png?style=shield" />](https://discord.gg/fh58dH6k)
+The project addresses the limitations of manual course lookup and traditional support channels, which often suffer from response delays and inconsistent information, by proposing an automated QA system. The system aims to leverage course knowledge effectively while generating natural, easy-to-understand answers appropriate to the student's query context. 
 
-### HippoRAG 2 is a powerful memory framework for LLMs that enhances their ability to recognize and utilize connections in new knowledge—mirroring a key function of human long-term memory.
+## Goals and Scope
+The core objective of the research is to evaluate and compare two advisory systems: the **baseline RAG model (Simple RAG)** and a **Graph-integrated RAG model (HippoRAG-2 / Graph-based RAG)**. This comparison is conducted through quantitative metrics and qualitative assessment based on pre-defined real-world scenarios.
 
-Our experiments show that HippoRAG 2 improves associativity (multi-hop retrieval) and sense-making (the process of integrating large and complex contexts) in even the most advanced RAG systems, without sacrificing their performance on simpler tasks.
+The system focuses specifically on retrieving and responding to course information in an automated QA format, utilizing structured input data. The project defined **10 specific study scenarios**, including:
+*   Retrieving detailed information about a single module (e.g., prerequisites, semester offered, or learning outcomes).
+*   Retrieving and summarizing learning outcomes for a group of courses (up to five).
+*   Retrieving prerequisite relationships among a group of modules.
+*   Retrieving instructor names for a group of courses.
 
-Like its predecessor, HippoRAG 2 remains cost and latency efficient in online processes, while using significantly fewer resources for offline indexing compared to other graph-based solutions such as GraphRAG, RAPTOR, and LightRAG.
+The scope is intentionally limited to information retrieval and response, excluding functions like personalized course recommendations based on student history or career goals.
 
-<p align="center">
-  <img align="center" src="https://github.com/OSU-NLP-Group/HippoRAG/raw/main/images/intro.png" />
-</p>
-<p align="center">
-  <b>Figure 1:</b> Evaluation of continual learning capabilities across three key dimensions: factual memory (NaturalQuestions, PopQA), sense-making (NarrativeQA), and associativity (MuSiQue, 2Wiki, HotpotQA, and LV-Eval). HippoRAG 2 surpasses other methods across all
-categories, bringing it one step closer to true long-term memory.
-</p>
+## Architecture and Methodology
 
-<p align="center">
-  <img align="center" src="https://github.com/OSU-NLP-Group/HippoRAG/raw/main/images/methodology.png" />
-</p>
-<p align="center">
-  <b>Figure 2:</b> HippoRAG 2 methodology.
-</p>
+The system adheres to the standard RAG architecture, comprising three main components: data preprocessing and course knowledge construction, relevant document retrieval based on queries, and automatic answer generation using a Large Language Model (LLM).
 
-#### Check out our papers to learn more:
+### 1. Data Processing and Input
 
-* [**HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models**](https://arxiv.org/abs/2405.14831) [NeurIPS '24].
-* [**From RAG to Memory: Non-Parametric Continual Learning for Large Language Models**](https://arxiv.org/abs/2502.14802) [Under Review].
+Input data was extracted from the module handbooks (in `.docx` format) of three academic programs at the Faculty of Mathematics and Computer Science, VNU-HCM: **Data Science (DS)**, **Applied Mathematics (AM)**, and **Mathematics and Computer Science (MCS)**. The specifics are presented within the `report.pdf`.
 
-----
+**Preprocessing Pipeline:**
+A complete and automated data processing pipeline was developed to clean, normalize, and restructure the raw `.docx` data into a consistent JSON format. A key challenge addressed was the inconsistency and errors in prerequisite course names, particularly permutation errors.
 
-## Installation
+*   **Prerequisite Standardization:** The `PrerequisiteExtractor` module was deployed to match and standardize incorrectly formatted prerequisite names. Comparative evaluation showed that the **Jaccard coefficient** provided superior performance (average Accuracy of 0.96 and Macro F1-Score of 0.95) for handling permutation errors compared to other methods like Levenshtein or Longest Common Subsequence (LCS).
 
-```sh
-conda create -n hipporag python=3.10
-conda activate hipporag
-pip install hipporag
-pip install -r requirements.txt
-set OPENAI_API_KEY=<your openai api key>   # if you want to use OpenAI model
-python run demo.py # if you want to see the demonstration
-python run test_AM.py # Run the test AM script
+**Output Data:** The output is standardized course data in JSON format, used to generate the LLM response, which is primarily prioritized in English.
+
 ```
-Initialize the environmental variables and activate the environment:
-
-```sh
-export CUDA_VISIBLE_DEVICES=0,1,2,3
-export HF_HOME=<path to Huggingface home directory>
-export OPENAI_API_KEY=<your openai api key>   # if you want to use OpenAI model
-
-conda activate hipporag
-```
-
-## Quick Start
-
-### OpenAI Models
-
-This simple example will illustrate how to use `hipporag` with any OpenAI model:
-
-```python
-from hipporag import HippoRAG
-
-# Prepare datasets and evaluation
-docs = [
-    "Oliver Badman is a politician.",
-    "George Rankin is a politician.",
-    "Thomas Marwick is a politician.",
-    "Cinderella attended the royal ball.",
-    "The prince used the lost glass slipper to search the kingdom.",
-    "When the slipper fit perfectly, Cinderella was reunited with the prince.",
-    "Erik Hort's birthplace is Montebello.",
-    "Marina is bom in Minsk.",
-    "Montebello is a part of Rockland County."
-]
-
-save_dir = 'outputs'# Define save directory for HippoRAG objects (each LLM/Embedding model combination will create a new subdirectory)
-llm_model_name = 'gpt-4o-mini' # Any OpenAI model name
-embedding_model_name = 'nvidia/NV-Embed-v2'# Embedding model name (NV-Embed, GritLM or Contriever for now)
-
-#Startup a HippoRAG instance
-hipporag = HippoRAG(save_dir=save_dir, 
-                    llm_model_name=llm_model_name,
-                    embedding_model_name=embedding_model_name) 
-
-#Run indexing
-hipporag.index(docs=docs)
-
-#Separate Retrieval & QA
-queries = [
-    "What is George Rankin's occupation?",
-    "How did Cinderella reach her happy ending?",
-    "What county is Erik Hort's birthplace a part of?"
-]
-
-retrieval_results = hipporag.retrieve(queries=queries, num_to_retrieve=2)
-qa_results = hipporag.rag_qa(retrieval_results)
-
-#Combined Retrieval & QA
-rag_results = hipporag.rag_qa(queries=queries)
-
-#For Evaluation
-answers = [
-    ["Politician"],
-    ["By going to the ball."],
-    ["Rockland County"]
-]
-
-gold_docs = [
-    ["George Rankin is a politician."],
-    ["Cinderella attended the royal ball.",
-    "The prince used the lost glass slipper to search the kingdom.",
-    "When the slipper fit perfectly, Cinderella was reunited with the prince."],
-    ["Erik Hort's birthplace is Montebello.",
-    "Montebello is a part of Rockland County."]
-]
-
-rag_results = hipporag.rag_qa(queries=queries, 
-                              gold_docs=gold_docs,
-                              gold_answers=answers)
-```
-
-#### Example (OpenAI Compatible Embeddings)
-
-If you want to use LLMs and Embeddings Compatible to OpenAI, please use the following methods.</p>
-    
-```python
-hipporag = HippoRAG(save_dir=save_dir, 
-    llm_model_name='Your LLM Model name',
-    llm_base_url='Your LLM Model url',
-    embedding_model_name='Your Embedding model name',  
-    embedding_base_url='Your Embedding model url')
-```
-
-### Local Deployment (vLLM)
-
-This simple example will illustrate how to use `hipporag` with any vLLM-compatible locally deployed LLM.
-
-1. Run a local [OpenAI-compatible vLLM server](https://docs.vllm.ai/en/latest/getting_started/quickstart.html#quickstart-online) with specified GPUs (make sure you leave enough memory for your embedding model).
-
-```sh
-export CUDA_VISIBLE_DEVICES=0,1
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
-export HF_HOME=<path to Huggingface home directory>
-
-conda activate hipporag  # vllm should be in this environment
-
-# Tune gpu-memory-utilization or max_model_len to fit your GPU memory, if OOM occurs
-vllm serve meta-llama/Llama-3.3-70B-Instruct --tensor-parallel-size 2 --max_model_len 4096 --gpu-memory-utilization 0.95 
-```
-
-2. Now you can use very similar code to the one above to use `hipporag`: 
-
-```python
-save_dir = 'outputs'# Define save directory for HippoRAG objects (each LLM/Embedding model combination will create a new subdirectory)
-llm_model_name = # Any OpenAI model name
-embedding_model_name = # Embedding model name (NV-Embed, GritLM or Contriever for now)
-llm_base_url= # Base url for your deployed LLM (i.e. http://localhost:8000/v1)
-
-hipporag = HippoRAG(save_dir=save_dir,
-                    llm_model_name=llm_model,
-                    embedding_model_name=embedding_model_name,
-                    llm_base_url=llm_base_url)
-
-# Same Indexing, Retrieval and QA as running OpenAI models above
-```
-
-## Testing
-
-When making a contribution to HippoRAG, please run the scripts below to ensure that your changes do not result in unexpected behavior from our core modules. 
-
-These scripts test for indexing, graph loading, document deletion and incremental updates to a HippoRAG object.
-
-### OpenAI Test
-
-To test HippoRAG with an OpenAI LLM and embedding model, simply run the following. 
-The cost of this test will be negligible.
-
-```sh
-export OPENAI_API_KEY=<your openai api key> 
-
-conda activate hipporag
-
-python tests_openai.py
-```
-
-### Local Test
-
-To test locally, you must deploy a vLLM instance. We choose to deploy a smaller 8B model `Llama-3.1-8B-Instruct` for cheaper testing.
-
-```sh
-export CUDA_VISIBLE_DEVICES=0
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
-export HF_HOME=<path to Huggingface home directory>
-
-conda activate hipporag  # vllm should be in this environment
-
-# Tune gpu-memory-utilization or max_model_len to fit your GPU memory, if OOM occurs
-vllm serve meta-llama/Llama-3.1-8B-Instruct --tensor-parallel-size 2 --max_model_len 4096 --gpu-memory-utilization 0.95 --port 6578
-```
-
-Then, we run the following test script:
-
-```sh
-CUDA_VISIBLE=1 python tests_local.py
-```
-
-## Reproducing our Experiments
-
-To use our code to run experiments we recommend you clone this repository and follow the structure of the `main.py` script.
-
-### Data for Reproducibility
-
-We evaluated several sampled datasets in our paper, some of which are already included in the `reproduce/dataset` directory of this repo. For the complete set of datasets, please visit
-our [HuggingFace dataset](https://huggingface.co/datasets/osunlp/HippoRAG_v2) and place them under `reproduce/dataset`. We also provide the OpenIE results for both `gpt-4o-mini` and `Llama-3.3-70B-Instruct` for our `musique` sample under `outputs/musique`.
-
-To test your environment is properly set up, you can use the small dataset `reproduce/dataset/sample.json` for debugging as shown below.
-
-### Running Indexing & QA
-
-Initialize the environmental variables and activate the environment:
-
-```sh
-export CUDA_VISIBLE_DEVICES=0,1,2,3
-export HF_HOME=<path to Huggingface home directory>
-export OPENAI_API_KEY=<your openai api key>   # if you want to use OpenAI model
-
-conda activate hipporag
-```
-
-### Run with OpenAI Model
-
-```sh
-dataset=sample  # or any other dataset under `reproduce/dataset`
-
-# Run OpenAI model
-python main.py --dataset $dataset --llm_base_url https://api.openai.com/v1 --llm_name gpt-4o-mini --embedding_name nvidia/NV-Embed-v2
-```
-
-### Run with vLLM (Llama)
-
-1. As above, run a local [OpenAI-compatible vLLM server](https://docs.vllm.ai/en/latest/getting_started/quickstart.html#quickstart-online) with specified GPU.
-
-```sh
-export CUDA_VISIBLE_DEVICES=0,1
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
-export HF_HOME=<path to Huggingface home directory>
-
-conda activate hipporag  # vllm should be in this environment
-
-# Tune gpu-memory-utilization or max_model_len to fit your GPU memory, if OOM occurs
-vllm serve meta-llama/Llama-3.3-70B-Instruct --tensor-parallel-size 2 --max_model_len 4096 --gpu-memory-utilization 0.95 
-```
-
-2. Use another GPUs to run the main program in another terminal.
-
-```sh
-export CUDA_VISIBLE_DEVICES=2,3  # set another GPUs while vLLM server is running
-export HF_HOME=<path to Huggingface home directory>
-dataset=sample
-
-python main.py --dataset $dataset --llm_base_url http://localhost:8000/v1 --llm_name meta-llama/Llama-3.3-70B-Instruct --embedding_name nvidia/NV-Embed-v2
-```
-
-#### Advanced: Run with vLLM offline batch
-
-vLLM offers an [offline batch mode](https://docs.vllm.ai/en/latest/getting_started/quickstart.html#offline-batched-inference) for faster inference, which could bring us more than 3x faster indexing compared to vLLM online server. 
-
-1. Use the following command to run the main program with vLLM offline batch mode.
-
-```sh
-export CUDA_VISIBLE_DEVICES=0,1,2,3 # use all GPUs for faster offline indexing
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
-export HF_HOME=<path to Huggingface home directory>
-export OPENAI_API_KEY=''
-dataset=sample
-
-python main.py --dataset $dataset --llm_name meta-llama/Llama-3.3-70B-Instruct --openie_mode offline --skip_graph
-```
-
-2. After the first step, OpenIE result is saved to file. Go back to run vLLM online server and main program as described in the `Run with vLLM (Llama)` main section.
-
-## Debugging Note
-
-- `/reproduce/dataset/sample.json` is a small dataset specifically for debugging.
-- When debugging vLLM offline mode, set `tensor_parallel_size` as `1` in `hipporag/llm/vllm_offline.py`.
-- If you want to rerun a particular experiment, remember to clear the saved files, including OpenIE results and knowledge graph, e.g.,
-
-```sh
-rm reproduce/dataset/openie_results/openie_sample_results_ner_meta-llama_Llama-3.3-70B-Instruct_3.json
-rm -rf outputs/sample/sample_meta-llama_Llama-3.3-70B-Instruct_nvidia_NV-Embed-v2
-```
-### Custom Datasets
-
-To setup your own custom dataset for evaluation, follow the format and naming convention shown in `reproduce/dataset/sample_corpus.json` (your dataset's name should be followed by `_corpus.json`). If running an experiment with pre-defined questions, organize your query corpus according to the query file `reproduce/dataset/sample.json`, be sure to also follow our naming convention.
-
-The corpus and optional query JSON files should have the following format:
-
-#### Retrieval Corpus JSON
-
-```json
-[
-  {
-    "title": "FIRST PASSAGE TITLE",
-    "text": "FIRST PASSAGE TEXT",
-    "idx": 0
-  },
-  {
-    "title": "SECOND PASSAGE TITLE",
-    "text": "SECOND PASSAGE TEXT",
-    "idx": 1
-  }
-]
-```
-
-#### (Optional) Query JSON
-
-```json
-
-[
-  {
-    "id": "sample/question_1.json",
-    "question": "QUESTION",
-    "answer": [
-      "ANSWER"
-    ],
-    "answerable": true,
-    "paragraphs": [
-      {
-        "title": "{FIRST SUPPORTING PASSAGE TITLE}",
-        "text": "{FIRST SUPPORTING PASSAGE TEXT}",
-        "is_supporting": true,
-        "idx": 0
-      },
-      {
-        "title": "{SECOND SUPPORTING PASSAGE TITLE}",
-        "text": "{SECOND SUPPORTING PASSAGE TEXT}",
-        "is_supporting": true,
-        "idx": 1
-      }
+{
+    "MTH00010": [
+        "course id: MTH00010",
+        "course name: Analysis 1A",
+        "semester: odd",
+        "teacher name: Ong Thanh Hai",
+        "course type: Compulsory",
+        "required prerequisites: none",
+        "learning outcomes: The objective of the module is to equip 
+        students with the basic knowledge of the foundation of calculus
+        as the foundation for specialized modules.",
+        "content: The course covers the basics of real numbers, sequences
+        and series of real numbers."
     ]
-  }
-]
-```
-
-#### (Optional) Chunking Corpus
-
-When preparing your data, you may need to chunk each passage, as longer passage may be too complex for the OpenIE process.
-
-## Code Structure
-
-```
-📦 .
-│-- 📂 src/hipporag
-│   ├── 📂 embedding_model          # Implementation of all embedding models
-│   │   ├── __init__.py             # Getter function for get specific embedding model classes
-|   |   ├── base.py                 # Base embedding model class `BaseEmbeddingModel` to inherit and `EmbeddingConfig`
-|   |   ├── NVEmbedV2.py            # Implementation of NV-Embed-v2 model
-|   |   ├── ...
-│   ├── 📂 evaluation               # Implementation of all evaluation metrics
-│   │   ├── __init__.py
-|   |   ├── base.py                 # Base evaluation metric class `BaseMetric` to inherit
-│   │   ├── qa_eval.py              # Eval metrics for QA
-│   │   ├── retrieval_eval.py       # Eval metrics for retrieval
-│   ├── 📂 information_extraction  # Implementation of all information extraction models
-│   │   ├── __init__.py
-|   |   ├── openie_openai_gpt.py    # Model for OpenIE with OpenAI GPT
-|   |   ├── openie_vllm_offline.py  # Model for OpenIE with LLMs deployed offline with vLLM
-│   ├── 📂 llm                      # Classes for inference with large language models
-│   │   ├── __init__.py             # Getter function
-|   |   ├── base.py                 # Config class for LLM inference and base LLM inference class to inherit
-|   |   ├── openai_gpt.py           # Class for inference with OpenAI GPT
-|   |   ├── vllm_llama.py           # Class for inference using a local vLLM server
-|   |   ├── vllm_offline.py         # Class for inference using the vLLM API directly
-│   ├── 📂 prompts                  # Prompt templates and prompt template manager class
-|   │   ├── 📂 dspy_prompts         # Prompts for filtering
-|   │   │   ├── ...
-|   │   ├── 📂 templates            # All prompt templates for template manager to load
-|   │   │   ├── README.md           # Documentations of usage of prompte template manager and prompt template files
-|   │   │   ├── __init__.py
-|   │   │   ├── triple_extraction.py
-|   │   │   ├── ...
-│   │   ├── __init__.py
-|   |   ├── linking.py              # Instruction for linking
-|   |   ├── prompt_template_manager.py  # Implementation of prompt template manager
-│   ├── 📂 utils                    # All utility functions used across this repo (the file name indicates its relevant usage)
-│   │   ├── config_utils.py         # We use only one config across all modules and its setup is specified here
-|   |   ├── ...
-│   ├── __init__.py
-│   ├── HippoRAG.py          # Highest level class for initiating retrieval, question answering, and evaluations
-│   ├── embedding_store.py   # Storage database to load, manage and save embeddings for passages, entities and facts.
-│   ├── rerank.py            # Reranking and filtering methods
-│-- 📂 examples
-│   ├── ...
-│   ├── ...
-│-- 📜 README.md
-│-- 📜 requirements.txt   # Dependencies list
-│-- 📜 .gitignore         # Files to exclude from Git
-
-
-```
-
-## Contact
-
-Questions or issues? File an issue or contact 
-[Bernal Jiménez Gutiérrez](mailto:jimenezgutierrez.1@osu.edu),
-[Yiheng Shu](mailto:shu.251@osu.edu),
-[Yu Su](mailto:su.809@osu.edu),
-The Ohio State University
-
-## Citation
-
-If you find this work useful, please consider citing our papers:
-
-### HippoRAG 2
-```
-@misc{gutiérrez2025ragmemorynonparametriccontinual,
-      title={From RAG to Memory: Non-Parametric Continual Learning for Large Language Models}, 
-      author={Bernal Jiménez Gutiérrez and Yiheng Shu and Weijian Qi and Sizhe Zhou and Yu Su},
-      year={2025},
-      eprint={2502.14802},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.14802}, 
 }
 ```
 
-### HippoRAG
+### 2. RAG Model Comparison
+The thesis compares Simple RAG against the extended architecture, **HippoRAG-2**.
 
-```
-@inproceedings{gutiérrez2024hipporag,
-      title={HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models}, 
-      author={Bernal Jiménez Gutiérrez and Yiheng Shu and Yu Gu and Michihiro Yasunaga and Yu Su},
-      booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-      year={2024},
-      url={https://openreview.net/forum?id=hkujvAPVsg}
- ```
+#### HippoRAG-2 (Graph-based RAG)
+HippoRAG-2, a hybrid GraphRAG model, integrates a knowledge graph to exploit the complex relationships between courses, such as prerequisites or related knowledge.
 
-## TODO:
+*   **Offline Indexing:** An LLM (acting as an "artificial neocortex") is used to extract entities and triples (subject-predicate-object) from course passages. This information is used to build a **Knowledge Graph** containing Document Nodes (red) and Entity Nodes (blue). Edges are created for semantic relations and synonymous entities (using L2-normalized cosine similarity with a threshold of 0.8).
+*   **Online Retrieval:** The system extracts query entities and performs Dense Passage Retrieval (DPR). Relevant nodes are identified as **Seed Nodes**. The **Personalized PageRank (PPR)** algorithm is then applied to traverse the graph and calculate relevance scores for all nodes, prioritizing those related to the query's context. The top 5 highest-scoring document nodes are retrieved as context for the final generation stage.
 
-- [x] Add support for more embedding models
-- [x] Add support for embedding endpoints
-- [ ] Add support for vector database integration
+#### Simple RAG
+The Simple RAG model serves as the baseline, maintaining the core RAG architecture but omitting the entity extraction, triple generation, and knowledge graph construction phases. Retrieval relies solely on comparing the vector representation of the query against the vector representations of the course passages.
 
-Please feel free to open an issue or PR if you have any questions or suggestions.
+## Models and Technology Used
+| Component | Models Used (Examples) | Role |
+| :--- | :--- | :--- |
+| **LLMs (Generation/Extraction)** | **GPT-4o mini**, Llama-3.1-8B. | Entity/Triple extraction (offline) and final answer generation (online). |
+| **Embedding Models (Retrieval/Indexing)** | **NV-Embed-v2**, **GritLM-7B**, text-embedding-3-small, Contriever. | Creating vector representations of passages/entities and performing dense retrieval (DPR). |
+| **Sparse Retrieval** | BM25. | Used as a traditional baseline method for retrieval comparison. |
+| **Algorithms** | Personalized PageRank (PPR), Jaccard Coefficient. | Ranking nodes in the KG for Graph-based RAG; string matching during data preprocessing. |
+
+## Key Findings and Evaluation
+The models were evaluated using three test sets: `closed_end` (simple, short answers), `opened_end` (simple, natural language answers), and `multihop` (complex reasoning, integrating information from multiple courses),.
+
+### Performance with State-of-the-Art Embeddings (GPT-4o mini)
+When using modern, powerful embedding models like **NV-Embed-v2** and **GritLM-7B** for retrieval:
+*   **Retrieval:** Simple RAG demonstrated very high and competitive retrieval performance across all datasets (e.g., DS average R@1 reached 71.4%, MCS average R@1 reached 71.1%),. The performance of Simple RAG was superior to traditional methods like BM25 (e.g., AM R@1=35.8).
+*   **Graph Impact:** The integration of the graph structure in HippoRAG-2 provided only a small, non-significant performance boost when these strong embedding models were already used,.
+*   **Generation Quality:** The difference between Simple RAG and Graph-based RAG in terms of language generation quality (measured by BLEU, METEOR, ROUGE-L, and AI-based evaluation by GPT-4) was generally **not clearly noticeable**.
+
+### Performance with other models (Llama-3.1-8B + Contriever)
+When evaluating the performance using the smaller LLM (Llama-3.1-8B) paired with the Contriever embedding model:
+*   **Graph Superiority:** **Graph-based RAG showed clear superiority** over Simple RAG. The average **Recall@5** for Graph-based RAG across all three programs consistently exceeded **90%**, demonstrating that the knowledge graph successfully enhances retrieval performance and contextual relevance when weaker embedding models are utilized.
+
+### Conclusion
+The overall analysis suggests that **Simple RAG**, when equipped with high-quality, modern embedding models, presents a more suitable solution for this application. This approach achieves highly competitive performance while benefiting from a simpler architecture, faster processing time, and lower deployment cost compared to Graph-based RAG,.
+
+## Future Work
+Potential directions for future research include:
+1.  **Data and Language Expansion:** Extending the system beyond course descriptions to include detailed syllabi and learning materials, and supporting the Vietnamese language.
+2.  **Practical Deployment and Personalization:** Implementing the system as a chatbot integrated into student portals and expanding functionality to include course recommendations personalized by individual student learning history and career goals
+---
+## Repository Link
+The project is built upon the HippoRAG repository:
+<https://github.com/OSU-NLP-Group/HippoRAG/tree/main>
