@@ -18,7 +18,7 @@ The scope is intentionally limited to information retrieval and response, exclud
 
 ## Preview UI chatbot
 
-https://github.com/user-attachments/assets/f4be9168-c8ad-43bd-bc1b-48f7f2d42225
+https://github.com/user-attachments/assets/46aad09d-ae6f-4b9c-b4f7-38f6c36935c6
 
 ## Architecture and Methodology
 
