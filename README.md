@@ -64,7 +64,7 @@ The Simple RAG model serves as the baseline, maintaining the core RAG architectu
 ## Models and Technology Used
 | Component | Models Used (Examples) | Role |
 | :--- | :--- | :--- |
-| **LLMs (Generation/Extraction)** | **GPT-4o mini**, Llama-3.1-8B. | Entity/Triple extraction (offline) and final answer generation (online). |
+| **LLMs (Generation/Extraction)** | **GPT-4o mini**, **Llama-3.1-8B**. | Entity/Triple extraction (offline) and final answer generation (online). |
 | **Embedding Models (Retrieval/Indexing)** | **NV-Embed-v2**, **GritLM-7B**, text-embedding-3-small, Contriever. | Creating vector representations of passages/entities and performing dense retrieval (DPR). |
 | **Sparse Retrieval** | BM25. | Used as a traditional baseline method for retrieval comparison. |
 | **Algorithms** | Personalized PageRank (PPR), Jaccard Coefficient. | Ranking nodes in the KG for Graph-based RAG; string matching during data preprocessing. |
