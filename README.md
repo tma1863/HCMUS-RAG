@@ -16,6 +16,10 @@ The system focuses specifically on retrieving and responding to course informati
 
 The scope is intentionally limited to information retrieval and response, excluding functions like personalized course recommendations based on student history or career goals.
 
+## Preview UI chatbot
+
+https://github.com/user-attachments/assets/f4be9168-c8ad-43bd-bc1b-48f7f2d42225
+
 ## Architecture and Methodology
 
 The system adheres to the standard RAG architecture, comprising three main components: data preprocessing and course knowledge construction, relevant document retrieval based on queries, and automatic answer generation using a Large Language Model (LLM).
